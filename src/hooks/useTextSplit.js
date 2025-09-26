@@ -10,9 +10,6 @@ const useTextSplit = (elementRef) => {
   });
   const animationRef = useRef(null);
   const splitInstanceRef = useRef(null);
-  const inViewTimerRef = useRef(null);
-  const hasCompletedRef = useRef(false);
-  const isCurrentlyInViewRef = useRef(false);
 
   useEffect(() => {
     if (elementRef.current) {
@@ -21,38 +18,17 @@ const useTextSplit = (elementRef) => {
   }, [elementRef, inViewRef]);
 
   useEffect(() => {
-    isCurrentlyInViewRef.current = inView;
+    if (inView && elementRef.current) {
+      requestAnimationFrame(() => {
+        // ✅ Split immediately (don’t wait for fonts)
+        splitInstanceRef.current = new SplitType(elementRef.current, {
+          types: "words, chars",
+          wordClass: "split-word",
+          charClass: "split-char",
+          lineClass: "split-line",
+        });
 
-    if (inView && !hasCompletedRef.current) {
-      // Start 200-milliseconds timer when element enters view
-      inViewTimerRef.current = setTimeout(() => {
-        if (isCurrentlyInViewRef.current && !hasCompletedRef.current) {
-          startAnimation();
-        }
-      }, 200);
-    } else {
-      clearTimeout(inViewTimerRef.current);
-    }
-
-    return () => {
-      clearTimeout(inViewTimerRef.current);
-    };
-  }, [inView]);
-
-  const startAnimation = () => {
-    if (!elementRef.current || hasCompletedRef.current) return;
-
-    hasCompletedRef.current = true;
-
-    document.fonts?.ready?.then(() => {
-      splitInstanceRef.current = new SplitType(elementRef.current, {
-        types: "words, chars",
-        wordClass: "split-word",
-        charClass: "split-char",
-        lineClass: "split-line",
-      });
-
-      const ctx = gsap.context(() => {
+        // ✅ Animate only opacity/transform
         gsap.set(splitInstanceRef.current.chars, {
           opacity: 0,
           x: -50,
@@ -66,14 +42,14 @@ const useTextSplit = (elementRef) => {
           ease: "power3.out",
           force3D: true,
         });
-      }, elementRef);
 
-      return () => {
-        ctx.revert();
-        splitInstanceRef.current?.revert?.();
-      };
-    }) || startAnimation(); // Fallback if document.fonts doesn't exist
-  };
+        return () => {
+          animationRef.current?.kill?.();
+          splitInstanceRef.current?.revert?.();
+        };
+      });
+    }
+  }, [inView]);
 
   return null;
 };

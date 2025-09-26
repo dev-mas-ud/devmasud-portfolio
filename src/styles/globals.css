@@ -78,6 +78,10 @@ html {
   -webkit-user-select: none;
 }
 
+.pre-split {
+  opacity: 1; /* visible immediately */
+}
+
 img {
   pointer-events: none;
 }

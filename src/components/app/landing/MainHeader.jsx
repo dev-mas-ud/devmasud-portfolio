@@ -23,20 +23,23 @@ export default function MainHeader() {
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      bg="#000"
+      bg="#000000"
     >
       <Image
         src={"/images/coding.webp"}
-        height={512}
-        width={512}
+        height={256}
+        width={256}
         alt="programing languages"
+        priority
+        fetchPriority="high"
         style={{
           objectFit: "cover",
-
           position: "absolute",
+          height: "256px",
+          width: "256px",
           transform: "translate(-50%, -50%)",
           opacity: "0.15",
-          top: "70%",
+          top: "85%",
           left: "50%",
         }}
       />
@@ -44,6 +47,7 @@ export default function MainHeader() {
       <VStack justify={"center"} m={{ base: 0, md: 2 }} gap={4}>
         <Heading
           ref={textRef}
+          className="pre-split"
           as="h1"
           w="full"
           mt={{ base: 4, md: 0 }}
@@ -51,7 +55,8 @@ export default function MainHeader() {
           fontWeight={600}
           color="baseLight"
           lineHeight="1.3"
-          textAlign={"center"}
+          textAlign="center"
+          minH={{ base: "calc(5.1em * 1.3)", md: "calc(2em * 1.3)" }}
         >
           CODING WITH PASSION, CREATING WITH PURPOSE
         </Heading>

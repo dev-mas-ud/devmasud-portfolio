@@ -19,7 +19,7 @@ export default function Portfolio() {
     {
       title: "Event Planning Landing Page",
       href: "https://masud73.github.io/event-planner/",
-      imgUrl: "/images/event-planner.webp",
+      imgUrl: "/images/event-planner.jpg",
     },
     {
       title: "Dental Clinic Landing Page",

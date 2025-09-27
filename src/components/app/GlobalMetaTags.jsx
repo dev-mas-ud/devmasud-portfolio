@@ -6,7 +6,7 @@ export default function GlobalMetaTags() {
       // ✅ Title optimized for personal branding + services
       defaultTitle="Websites by Masud - Creative Web Design & Development in Nigeria"
       description="Websites by Masud helps individuals and businesses build modern, mobile-friendly, and affordable websites. From portfolios to custom web apps — I design and develop sites that perform and grow your brand."
-      canonical="https://websitesbymasud.com.ng/"
+      canonical="https://bytedesign.com.ng/"
       additionalMetaTags={[
         {
           name: "keywords",
@@ -50,7 +50,7 @@ export default function GlobalMetaTags() {
       ]}
       openGraph={{
         type: "website",
-        url: "https://websitesbymasud.com.ng/",
+        url: "https://bytedesign.com.ng/",
         title:
           "Websites by Masud - Creative Web Design & Development in Nigeria",
         description:
@@ -58,13 +58,13 @@ export default function GlobalMetaTags() {
         locale: "en_NG",
         images: [
           {
-            url: "https://websitesbymasud.com.ng/images/me.jpg",
+            url: "https://bytedesign.com.ng/images/me.jpg",
             width: 1200,
             height: 630,
             alt: "Websites by Masud - Creative Web Design Nigeria",
           },
           {
-            url: "https://websitesbymasud.com.ng/images/me.jpg",
+            url: "https://bytedesign.com.ng/images/me.jpg",
             width: 2400,
             height: 1260,
             alt: "Websites by Masud - Creative Web Design Nigeria",

@@ -1,5 +1,6 @@
 import { Box, Card } from "@chakra-ui/react";
 import Image from "next/image";
+import { useCallback } from "react";
 
 export default function FeatureCard({
   icon,
@@ -8,13 +9,25 @@ export default function FeatureCard({
   imgUrl,
   ...props
 }) {
+  const handleTouchStart = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.add("translate-y");
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.remove("translate-y");
+  }, []);
+
   return (
     <Card.Root
       bg="baseLight"
-      transition="all 0.3s"
+      transition="all 0.4s"
       _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
       rounded="3xl"
       border={"none"}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       {...props}
     >
       <Card.Body gap={2} justifyContent={"flex-start"} alignItems={"center"}>

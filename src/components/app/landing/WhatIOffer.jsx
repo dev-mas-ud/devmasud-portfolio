@@ -4,6 +4,7 @@ import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
 import { FaCartShopping } from "react-icons/fa6";
 import HeadingMarker from "./HeadingMarker";
+import { useCallback } from "react";
 
 const services = [
   {
@@ -33,6 +34,16 @@ const services = [
 ];
 
 export default function WhatIOffer() {
+  const handleTouchStart = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.add("translate-y");
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.remove("translate-y");
+  }, []);
+
   return (
     <Box
       id="services"
@@ -57,47 +68,49 @@ export default function WhatIOffer() {
             gap={{ base: 8, md: 10 }}
           >
             {services.map((service, index) => (
-              <SlideIn
-                key={index}
+              <Box
+                key={`why-${index}`}
                 bg="baseLight"
                 overflow={"hidden"}
                 rounded="3xl"
                 shadow="md"
-                _hover={{
-                  shadow: "2xl",
-                  transform: "translateY(-6px)",
-                }}
+                transition="all 0.5s"
+                _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
               >
-                <Flex
-                  py={4}
-                  direction="column"
-                  align="center"
-                  justify={"center"}
-                  w="full"
-                  shadow={"2xl"}
-                >
-                  <Box as={service.icon} size="40px" color="primary" />
-                </Flex>
-                <Box p={6}>
-                  <Heading
-                    as="h3"
-                    size="md"
-                    fontSize={"1.3em"}
-                    mb={3}
-                    color="neutralDark"
+                <SlideIn>
+                  <Flex
+                    py={6}
+                    direction="column"
+                    align="center"
+                    justify={"center"}
+                    w="full"
+                    shadow={"2xl"}
                   >
-                    {service.title}
-                  </Heading>
-                  <Text
-                    color="gray.600"
-                    textAlign={"left"}
-                    fontSize="md"
-                    lineHeight={1.9}
-                  >
-                    {service.description}
-                  </Text>
-                </Box>
-              </SlideIn>
+                    <Box as={service.icon} size="40px" color="primary" />
+                  </Flex>
+                  <Box p={6}>
+                    <Heading
+                      as="h3"
+                      size="md"
+                      fontSize={"1.3em"}
+                      mb={3}
+                      color="neutralDark"
+                    >
+                      {service.title}
+                    </Heading>
+                    <Text
+                      color="gray.600"
+                      textAlign={"left"}
+                      fontSize="md"
+                      lineHeight={1.9}
+                    >
+                      {service.description}
+                    </Text>
+                  </Box>
+                </SlideIn>
+              </Box>
             ))}
           </SimpleGrid>
         </SlideIn>

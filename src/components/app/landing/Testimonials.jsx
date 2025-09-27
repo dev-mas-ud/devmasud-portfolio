@@ -12,6 +12,7 @@ import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
 import HeadingMarker from "./HeadingMarker";
 import { StarFill } from "react-bootstrap-icons";
+import { useCallback } from "react";
 
 export default function Testimonials() {
   const TESTIMONIALS = [
@@ -51,6 +52,16 @@ export default function Testimonials() {
     },
   ];
 
+  const handleTouchStart = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.add("translate-y");
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.remove("translate-y");
+  }, []);
+
   return (
     <Box
       id="testimonials"
@@ -68,7 +79,7 @@ export default function Testimonials() {
         </Stack>
         <SimpleGrid px={2} columns={[1, 1, 2, 4]} gap={10}>
           {TESTIMONIALS.map(({ name, avatar, business, comment }, index) => (
-            <SlideIn
+            <Box
               key={`review-${index}`}
               bg={"secondary"}
               color="baseLight"
@@ -76,68 +87,70 @@ export default function Testimonials() {
               rounded="3xl"
               shadow="xl"
               textAlign="center"
-              transition="all 0.3s"
-              _hover={{
-                transform: "translateY(-6px)",
-              }}
+              transition="all 0.5s"
+              _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
             >
-              <HStack gap={2}>
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <StarFill color="gold" key={`rate-${i}`} />
-                ))}
-              </HStack>
-              <HStack gap={4} mb={2} mt={3} align={"center"}>
-                <Avatar.Root
-                  mt={2}
-                  width={50}
-                  height={50}
-                  p={1}
-                  overflow={"hidden"}
-                  rounded={"100"}
-                  bgGradient="to-r"
-                  gradientFrom="#08CB00"
-                  gradientTo="blue.200"
+              <SlideIn>
+                <HStack gap={2}>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <StarFill color="gold" key={`rate-${i}`} />
+                  ))}
+                </HStack>
+                <HStack gap={4} mb={2} mt={3} align={"center"}>
+                  <Avatar.Root
+                    mt={2}
+                    width={50}
+                    height={50}
+                    p={1}
+                    overflow={"hidden"}
+                    rounded={"100"}
+                    bgGradient="to-r"
+                    gradientFrom="#08CB00"
+                    gradientTo="blue.200"
+                  >
+                    <Avatar.Fallback name={name} />
+                    <Avatar.Image
+                      objectPosition={"top"}
+                      objectFit={"cover"}
+                      src={avatar}
+                      alt={business}
+                    />
+                  </Avatar.Root>
+                  <Stack>
+                    <Heading
+                      as="h3"
+                      fontWeight={"normal"}
+                      lineHeight={1.2}
+                      fontSize="md"
+                      textAlign={"left"}
+                      truncate
+                    >
+                      {name}
+                    </Heading>
+                    <Text
+                      color={"#d7d7d7"}
+                      lineHeight={1.2}
+                      fontSize={".9em"}
+                      textAlign={"left"}
+                    >
+                      {business}
+                    </Text>
+                  </Stack>
+                </HStack>
+                <Text
+                  mt={4}
+                  fontSize={"1em"}
+                  color="#d7d7d7"
+                  textAlign={"left"}
+                  lineHeight={"1.9"}
+                  lineClamp={{ md: 7 }}
                 >
-                  <Avatar.Fallback name={name} />
-                  <Avatar.Image
-                    objectPosition={"top"}
-                    objectFit={"cover"}
-                    src={avatar}
-                    alt={business}
-                  />
-                </Avatar.Root>
-                <Stack>
-                  <Heading
-                    as="h3"
-                    fontWeight={"normal"}
-                    lineHeight={1.2}
-                    fontSize="md"
-                    textAlign={"left"}
-                    truncate
-                  >
-                    {name}
-                  </Heading>
-                  <Text
-                    color={"#d7d7d7"}
-                    lineHeight={1.2}
-                    fontSize={".9em"}
-                    textAlign={"left"}
-                  >
-                    {business}
-                  </Text>
-                </Stack>
-              </HStack>
-              <Text
-                mt={4}
-                fontSize={"1em"}
-                color="#d7d7d7"
-                textAlign={"left"}
-                lineHeight={"1.9"}
-                lineClamp={{ md: 7 }}
-              >
-                {comment}
-              </Text>
-            </SlideIn>
+                  {comment}
+                </Text>
+              </SlideIn>
+            </Box>
           ))}
         </SimpleGrid>
       </Container>

@@ -8,33 +8,36 @@ import {
 } from "@chakra-ui/react";
 
 import H2Heading from "./H2Heading";
-import Image from "next/image";
 import { SlideIn } from "@/components/Animations";
 import { Button } from "@/components/Button";
 import { ArrowUpRightSquare } from "react-bootstrap-icons";
 import HeadingMarker from "./HeadingMarker";
+import { useState } from "react";
+import Image from "next/image";
 
 export default function Portfolio() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const PROJECTS = [
     {
       title: "Event Planning Landing Page",
       href: "https://masud73.github.io/event-planner/",
-      imgUrl: "/images/event-planner.jpg",
+      imgUrl: "/images/event-planner.png",
     },
     {
       title: "Dental Clinic Landing Page",
       href: "https://masud73.github.io/dental-clinic/",
-      imgUrl: "/images/dental-clinic.webp",
+      imgUrl: "/images/dental-clinic.png",
     },
     {
       title: "Restaurant Landing Page",
       href: "https://masud73.github.io/my-restaurant/",
-      imgUrl: "/images/restaurant.webp",
+      imgUrl: "/images/my-restaurant.png",
     },
     {
       title: "Woman Salon Landing Page",
       href: "https://masud73.github.io/glow-salon/",
-      imgUrl: "/images/glow-salon.webp",
+      imgUrl: "/images/glow-salon.png",
     },
   ];
 
@@ -72,7 +75,6 @@ export default function Portfolio() {
               transition="all 0.3s"
               _hover={{
                 shadow: "xl",
-                transform: "translateY(-6px)",
               }}
             >
               <Card.Body
@@ -88,10 +90,10 @@ export default function Portfolio() {
                   width="full"
                   maxH="250px"
                   minHeight="250px"
-                  transition="all 0.3s"
-                  _hover={{
-                    filter: "brightness(70%)",
-                  }}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  onTouchStart={() => setHoveredIndex(index)}
+                  onTouchEnd={() => setHoveredIndex(null)}
                 >
                   <Image
                     src={imgUrl}
@@ -99,12 +101,20 @@ export default function Portfolio() {
                     width={600}
                     height={400}
                     style={{
-                      objectFit: "cover",
                       width: "100%",
                       height: "auto",
+                      objectFit: "cover",
                       objectPosition: "top",
+                      transform:
+                        hoveredIndex === index
+                          ? "translateY(calc(-100% + 250px))"
+                          : "translateY(0)",
+
+                      transition:
+                        hoveredIndex === index
+                          ? "transform 10s ease-in-out"
+                          : ".3s",
                     }}
-                    sizes="100%"
                   />
                 </Box>
 

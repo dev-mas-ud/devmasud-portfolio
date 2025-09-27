@@ -3,7 +3,7 @@ import Image from "next/image";
 import H2Heading from "./H2Heading";
 import { Button } from "@/components/Button";
 import { SlideIn } from "@/components/Animations";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import HeadingMarker from "./HeadingMarker";
 import { Facebook, Instagram, Linkedin, TwitterX } from "react-bootstrap-icons";
 
@@ -38,6 +38,16 @@ export default function AboutMe() {
     },
   ];
 
+  const handleTouchStart = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.add("translate-y");
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    const target = e.currentTarget;
+    target.classList.remove("translate-y");
+  }, []);
+
   return (
     <Box
       id="about-me"
@@ -54,7 +64,7 @@ export default function AboutMe() {
         align="center"
         maxW="1200px"
         mx="auto"
-        gap={{ base: 10, md: 12 }}
+        gap={{ base: 16, md: 12 }}
       >
         <Box flex="1" zIndex={2} px={{ base: 2, md: 0 }}>
           <HeadingMarker text="WHO AM I" />
@@ -109,6 +119,10 @@ export default function AboutMe() {
           w={{ base: "100%", md: "30%" }}
           maxW={{ base: "100%", md: "30%" }}
           rounded="2xl"
+          transition="all 0.5s"
+          _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
           <SlideIn
             isImage={true}

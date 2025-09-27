@@ -84,7 +84,8 @@ export default function MainHeader() {
             Let's Talk
           </Button>
           <Button
-            variant="outline"
+            border="sm"
+            borderColor="baseLight"
             as="a"
             textDecoration="none"
             href="/#projects"

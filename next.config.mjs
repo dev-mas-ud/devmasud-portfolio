@@ -1,20 +1,7 @@
 export default {
   reactStrictMode: true,
-
   experimental: {
     optimizePackageImports: ["@chakra-ui/react"],
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "http://localhost:5000/:path*",
-      },
-      {
-        source: "/flw/:path*",
-        destination: "https://api.flutterwave.com/v3/:path*",
-      },
-    ];
   },
   async headers() {
     return [
@@ -38,7 +25,7 @@ export default {
         ],
       },
       {
-        source: "/images/og-banner.jpg",
+        source: "/images/me.jpg",
         headers: [
           {
             key: "Cache-Control",

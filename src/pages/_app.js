@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Provider } from "@/components/ui/provider";
 import { FullPageLoader } from "@/components/Loader";
-import "../styles/globals.css";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import { Analytics } from "@vercel/analytics/next";
@@ -14,6 +13,7 @@ import Script from "next/script";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { Stack } from "@chakra-ui/react";
 import Layout from "Layout";
+import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();

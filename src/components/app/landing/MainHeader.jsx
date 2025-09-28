@@ -67,7 +67,7 @@ export default function MainHeader() {
           lineHeight="1.7"
           w={{ base: "full", md: "60vw" }}
           textAlign={"center"}
-          my={2}
+          my={{ base: 1, md: 0 }}
         >
           Welcome to my portfolio — a space where design meets technology to
           create meaningful, functional web experiences.

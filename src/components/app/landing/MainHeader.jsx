@@ -56,7 +56,7 @@ export default function MainHeader() {
           color="baseLight"
           lineHeight="1.3"
           textAlign="center"
-          minH={{ base: "calc(5.1em * 1.3)", md: "calc(2em * 1.3)" }}
+          minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
           CODING WITH PASSION, CREATING WITH PURPOSE
         </Heading>
@@ -67,6 +67,7 @@ export default function MainHeader() {
           lineHeight="1.7"
           w={{ base: "full", md: "60vw" }}
           textAlign={"center"}
+          my={2}
         >
           Welcome to my portfolio — a space where design meets technology to
           create meaningful, functional web experiences.

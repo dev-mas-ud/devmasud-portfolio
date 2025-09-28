@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import { Provider } from "@/components/ui/provider";
 import { FullPageLoader } from "@/components/Loader";
 import "../styles/globals.css";
-import { useServiceWorker } from "hooks/useServiceWorker";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import { Analytics } from "@vercel/analytics/next";
@@ -22,7 +21,6 @@ export default function MyApp({ Component, pageProps }) {
   const [error, setError] = useState(null);
 
   useRouteChangeHandler(router, setLoading, setError);
-  useServiceWorker();
 
   const pathname = router.pathname;
   const is404 = pageProps.notFound || pathname === "/404";
@@ -62,19 +60,19 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@bytedesignng" />
-        <meta name="twitter:creator" content="@bytedesignng" />
+        <meta name="twitter:site" content="@devmasud" />
+        <meta name="twitter:creator" content="@devmasud" />
         <meta
           name="twitter:title"
-          content="ByteDesign - Affordable Web Design & Development in Nigeria"
+          content="Websites by Masud - Affordable Web Design & Development in Nigeria"
         />
         <meta
           name="twitter:description"
-          content="ByteDesign helps Nigerian businesses grow online with modern, mobile-friendly, and affordable websites."
+          content="Websites by Masud helps Nigerian businesses grow online with modern, mobile-friendly, and affordable websites."
         />
         <meta
           name="twitter:image"
-          content="https://bytedesign.com.ng/images/og-banner.jpg"
+          content="https://bytedesign.com.ng/images/me.jpg"
         />
         <script
           type="application/ld+json"
@@ -85,13 +83,11 @@ export default function MyApp({ Component, pageProps }) {
               "@id": "https://bytedesign.com.ng/#organization",
               name: "ByteDesign",
               url: "https://bytedesign.com.ng",
-              logo: "https://bytedesign.com.ng/images/android-chrome-512x512.png",
-              image: "https://bytedesign.com.ng/images/og-banner.jpg",
+              image: "https://bytedesign.com.ng/images/me.jpg",
               description:
-                "ByteDesign creates affordable, mobile-friendly websites and web apps for Nigerian businesses.",
+                "Websites by Masud creates affordable, mobile-friendly websites and web apps for Nigerian businesses.",
               telephone: "+2347065656558",
               email: "contact@bytedesign.com.ng",
-              priceRange: "₦",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "12 Allen Avenue", // update with real
@@ -120,10 +116,10 @@ export default function MyApp({ Component, pageProps }) {
                 },
               ],
               sameAs: [
-                "https://twitter.com/bytedesignng",
-                "https://web.facebook.com/profile.php?id=61580101715902",
-                "https://www.instagram.com/bytedesign", // add more if you have
-                "https://www.linkedin.com/company/bytedesign",
+                "https://twitter.com/devmasud",
+                "https://web.facebook.com/profile.php?id=61581299132973",
+                "https://www.instagram.com/dev__masud",
+                "https://www.linkedin.com/in/dev-masud",
               ],
               areaServed: [
                 {

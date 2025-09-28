@@ -92,8 +92,8 @@ export default function Portfolio() {
                   minHeight="250px"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
-                  onTouchStart={() => setHoveredIndex(index)}
-                  onTouchEnd={() => setHoveredIndex(null)}
+                  onTouchStartCapture={() => setHoveredIndex(index)}
+                  onTouchCancelCapture={() => setHoveredIndex(null)}
                 >
                   <Image
                     src={imgUrl}

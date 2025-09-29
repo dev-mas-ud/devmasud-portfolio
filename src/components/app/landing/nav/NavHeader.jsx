@@ -80,8 +80,8 @@ export function NavLinks() {
                 <CloseButton
                   size="sm"
                   bg="primary"
-                  mt={3}
                   color="#000000"
+                  mt={2.5}
                   variant="surface"
                   aria-label="Close Menu"
                 >

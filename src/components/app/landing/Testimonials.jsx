@@ -77,7 +77,7 @@ export default function Testimonials() {
             <H2Heading>Some of My Happy Clients</H2Heading>
           </Box>
         </Stack>
-        <SimpleGrid px={2} columns={[1, 1, 2, 4]} gap={10}>
+        <SimpleGrid px={2} columns={[1, 1, 2, 4]} gap={{ base: 8, md: 10 }}>
           {TESTIMONIALS.map(({ name, avatar, business, comment }, index) => (
             <Box
               key={`review-${index}`}

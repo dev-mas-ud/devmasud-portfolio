@@ -43,7 +43,7 @@ export default function WhyMe() {
           </H2Heading>
         </Box>
       </Stack>
-      <SimpleGrid columns={[1, 1, 3]} gap={{ base: 8, md: 10 }} px={4}>
+      <SimpleGrid columns={[1, 1, 3]} gap={10} px={4}>
         {features.map(({ icon, title, description }, index) => (
           <SlideIn key={`WhyMe-${index}`}>
             <FeatureCard

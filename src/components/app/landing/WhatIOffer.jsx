@@ -63,10 +63,7 @@ export default function WhatIOffer() {
           </Box>
         </Stack>
         <SlideIn>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 4 }}
-            gap={{ base: 8, md: 10 }}
-          >
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={10}>
             {services.map((service, index) => (
               <Box
                 key={`why-${index}`}

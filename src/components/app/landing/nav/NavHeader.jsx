@@ -70,7 +70,7 @@ export function NavLinks() {
           <Drawer.Backdrop />
           <Drawer.Positioner>
             <Drawer.Content>
-              <Drawer.Header bg="neutralDark">
+              <Drawer.Header bg="neutralDark" py={7}>
                 <Brand />
               </Drawer.Header>
               <Drawer.Body bg="primary">
@@ -80,6 +80,7 @@ export function NavLinks() {
                 <CloseButton
                   size="sm"
                   bg="primary"
+                  mt={3}
                   color="#000000"
                   variant="surface"
                   aria-label="Close Menu"

@@ -29,7 +29,7 @@ This repository contains:
 
 I use modern, battle-tested technologies to deliver results:
 
-- **Frontend:** React / Next.js / Chakra UI / Tailwind CSS
+- **Frontend:** React / Next.js / Chakra UI / Tailwind CSS / GSAP / React Bootstrap Icons
 - **Backend:** Node.js API
 - **Other:** Git / Vercel
 

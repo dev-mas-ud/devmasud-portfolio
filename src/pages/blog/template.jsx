@@ -29,7 +29,7 @@ export default function BlogTemplate({
 }) {
   return (
     <Box w="full" userSelect={"text"}>
-      <Container maxW="4xl" py={16}>
+      <Container maxW="4xl" py={16} px={4}>
         <VStack align="start" gap={{ base: 6, md: 10 }}>
           <Box>
             <Badge colorPalette="teal" px={3} py={1} borderRadius="full" mb={3}>

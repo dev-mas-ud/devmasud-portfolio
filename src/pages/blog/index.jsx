@@ -30,17 +30,6 @@ export default function BlogPosts() {
       category: "Business",
       slug: "website-costs-business-ideas-nigeria",
     },
-    {
-      id: 2,
-      title: "Why Every Small Business Needs a Professional Website in 2024",
-      description:
-        "An in-depth guide on why every small business needs a professional website in 2024. Learn how to build trust, improve SEO, drive sales, and more.",
-      image: "/images/blog/small-business-website.jpg",
-      date: "April 28, 2024",
-      readTime: "6 min read",
-      category: "Web Design",
-      slug: "why-small-businesses-need-websites",
-    },
   ];
 
   return (
@@ -68,7 +57,7 @@ export default function BlogPosts() {
         />
       </Head>
 
-      <Box bg="baseLight" minH="100vh" py={12}>
+      <Box bg="baseLight" minH="100vh" py={12} px={4}>
         <Container maxW="4xl">
           <Box textAlign="center" mb={12}>
             <Heading as="h1" size="2xl" mb={4} color="neutralDark">

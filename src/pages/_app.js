@@ -178,8 +178,6 @@ export default function MyApp({ Component, pageProps }) {
       >
         <ScrollToTopButton />
       </Stack>
-
-      {/* Vercel's Components */}
       <Analytics />
     </Provider>
   );

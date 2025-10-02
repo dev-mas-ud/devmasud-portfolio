@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Provider } from "@/components/ui/provider";
 import { FullPageLoader } from "@/components/Loader";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import { Analytics } from "@vercel/analytics/next";
 import GlobalMetaTags from "@/components/app/GlobalMetaTags";
@@ -177,7 +176,6 @@ export default function MyApp({ Component, pageProps }) {
         alignItems={"center"}
         gap={16}
       >
-        <WhatsAppFloat />
         <ScrollToTopButton />
       </Stack>
 

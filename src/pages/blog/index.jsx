@@ -20,15 +20,25 @@ export default function BlogPosts() {
   const blogPosts = [
     {
       id: 1,
-      title:
-        "Website Costs and Winning Business Ideas for Nigerian Entrepreneurs",
+      title: "Website Costs for Nigerian Small Businesses",
       description:
-        "Comprehensive guide on website costs for Nigerian small businesses and profitable business ideas for Lagos, Abuja and online ventures.",
-      image: "/images/blog/business-idea.jpg",
+        "Comprehensive guide on website costs for Nigerian small businesses, including realistic budgets, hidden costs, and tips to get the best value.",
+      image: "/images/blog/website-cost.webp",
       date: "May 15, 2024",
-      readTime: "8 min read",
-      category: "Business",
-      slug: "website-costs-business-ideas-nigeria",
+      readTime: "15 min read",
+      category: "Technology",
+      slug: "website-costs-in-nigeria",
+    },
+    {
+      id: 1,
+      title: "Effective Online Marketing Strategies for Nigerian Businesses",
+      description:
+        "Discover the most effective online marketing strategies for Nigerian businesses. Learn how to use SEO, social media, content marketing, and paid ads to grow your brand and attract customers.",
+      image: "/images/blog/content-marketing.webp",
+      date: "May 15, 2024",
+      readTime: "10 min read",
+      category: "Marketing",
+      slug: "effective-online-marketing-strategies",
     },
   ];
 
@@ -36,7 +46,7 @@ export default function BlogPosts() {
     <>
       <Head>
         <title>
-          Blog Posts | ByteDesign - Web Design & Development Insights
+          Blog Posts | Websites by Masud - Web Design & Development Insights
         </title>
         <meta
           name="description"
@@ -44,7 +54,7 @@ export default function BlogPosts() {
         />
         <meta
           property="og:title"
-          content="Blog Posts | ByteDesign - Web Design & Development Insights"
+          content="Blog Posts | Websites by Masud - Web Design & Development Insights"
         />
         <meta
           property="og:description"
@@ -57,7 +67,7 @@ export default function BlogPosts() {
         />
       </Head>
 
-      <Box bg="baseLight" minH="100vh" py={12} px={4}>
+      <Box bg="baseLight" minH="100vh" py={12} px={{ base: 4, md: 0 }}>
         <Container maxW="4xl">
           <Box textAlign="center" mb={12}>
             <Heading as="h1" size="2xl" mb={4} color="neutralDark">
@@ -69,24 +79,7 @@ export default function BlogPosts() {
             </Text>
           </Box>
 
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={8} mb={12}>
-            <Box
-              textAlign="center"
-              p={6}
-              bg="white"
-              borderRadius="lg"
-              boxShadow="md"
-            >
-              <Box fontSize="4xl" mb={4} color="blue.600">
-                📊
-              </Box>
-              <Heading as="h2" color="neutralDark" fontSize={"1.2em"} mb={2}>
-                Business Tips
-              </Heading>
-              <Text color="neutralDark">
-                Strategies for growing your business in Nigeria
-              </Text>
-            </Box>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} gap={8} mb={12}>
             <Box
               textAlign="center"
               p={6}
@@ -187,19 +180,6 @@ export default function BlogPosts() {
               </Box>
             ))}
           </Stack>
-
-          <Box textAlign="center" mt={16} bg="#f9f9f9" p={8} borderRadius="xl">
-            <Heading as="h2" fontSize={"1.8em"} mb={4}>
-              Stay Updated
-            </Heading>
-            <Text mb={6} color="neutralDark">
-              Subscribe to my newsletter to get the latest blog posts and
-              updates
-            </Text>
-            <Button variant="solid" size="lg">
-              <EnvelopeAt /> Subscribe to Newsletter
-            </Button>
-          </Box>
         </Container>
       </Box>
     </>

@@ -25,19 +25,9 @@ export default function Portfolio() {
       imgUrl: "/images/event-planner.webp",
     },
     {
-      title: "Woman Salon Landing Page",
-      href: "https://masud73.github.io/glow-salon/",
-      imgUrl: "/images/glow-salon.webp",
-    },
-    {
       title: "Restaurant Landing Page",
       href: "https://masud73.github.io/my-restaurant/",
       imgUrl: "/images/my-restaurant.webp",
-    },
-    {
-      title: "Dental Clinic Landing Page",
-      href: "https://masud73.github.io/dental-clinic/",
-      imgUrl: "/images/dental-clinic.webp",
     },
   ];
 

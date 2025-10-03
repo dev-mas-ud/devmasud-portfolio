@@ -29,17 +29,21 @@ export default function BlogTemplate({
 }) {
   return (
     <Box w="full" userSelect={"text"}>
-      <Container maxW="4xl" py={16} px={4}>
+      <Container maxW="4xl" py={16} px={{ base: 6, md: 0 }}>
         <VStack align="start" gap={{ base: 6, md: 10 }}>
           <Box>
             <Badge colorPalette="teal" px={3} py={1} borderRadius="full" mb={3}>
               {category}
             </Badge>
-            <Heading as="h1" fontSize={"2.7rem"} lineHeight={1.4}>
+            <Heading
+              as="h1"
+              fontSize={"2.7rem"}
+              lineHeight={{ base: 1.3, md: 1.4 }}
+            >
               {title}
             </Heading>
 
-            <Flex align="center" gap={4} mb={6} mt={4}>
+            <Flex align="center" gap={4} mb={{ base: 2, md: 6 }} mt={4}>
               <Flex align="center">
                 <Icon as={FiCalendar} mr={1.5} />
                 <Text fontSize="sm">{publishDate}</Text>
@@ -55,7 +59,7 @@ export default function BlogTemplate({
           {imageURL && (
             <Box
               w="full"
-              minH="500px"
+              minH={{ base: "250px", md: "500px" }}
               rounded={"xl"}
               my={0}
               overflow={"hidden"}

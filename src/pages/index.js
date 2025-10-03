@@ -1,6 +1,6 @@
 import MainHeader from "@/components/app/landing/MainHeader";
-import WhyMe from "@/components/app/landing/WhyMe";
-import Faqs from "@/components/app/landing/Faqs";
+// import WhyMe from "@/components/app/landing/WhyMe";
+// import Faqs from "@/components/app/landing/Faqs";
 import CTASection from "@/components/app/landing/CallToAction";
 import Portfolio from "@/components/app/landing/Portfolio";
 import Testimonials from "@/components/app/landing/Testimonials";
@@ -14,11 +14,11 @@ export default function App() {
       <MainHeader />
       <AboutMe />
       <WhatIOffer />
-      <WhyMe />
+      {/* <WhyMe /> */}
       <Portfolio />
       <Testimonials />
       <Achivements />
-      <Faqs />
+      {/* <Faqs /> */}
       <CTASection />
     </>
   );

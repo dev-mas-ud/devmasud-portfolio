@@ -13,6 +13,7 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 import { Stack } from "@chakra-ui/react";
 import Layout from "Layout";
 import "../styles/globals.css";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -176,6 +177,7 @@ export default function MyApp({ Component, pageProps }) {
         alignItems={"center"}
         gap={16}
       >
+        <WhatsAppFloat />
         <ScrollToTopButton />
       </Stack>
       <Analytics />

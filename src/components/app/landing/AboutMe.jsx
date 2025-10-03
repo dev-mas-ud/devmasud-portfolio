@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { SlideIn } from "@/components/Animations";
 import { useCallback, useState } from "react";
 import HeadingMarker from "./HeadingMarker";
-import { Facebook, Instagram, Linkedin, TwitterX } from "react-bootstrap-icons";
+import { Github, Instagram, Linkedin, TwitterX } from "react-bootstrap-icons";
 
 export default function AboutMe() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -24,17 +24,16 @@ export default function AboutMe() {
       title: "@dev__masud",
     },
     {
-      icon: <Facebook size={20} color="#000000" />,
-      href: "https://web.facebook.com/profile.php?id=61581299132973",
-      label: "Follow me on Facebook",
-      title: "Websites by Masud",
-    },
-
-    {
       icon: <Linkedin size={20} color="#000000" />,
       href: "https://www.linkedin.com/in/dev-masud/",
       label: "Follow me on LinkedIn",
       title: "dev-masud",
+    },
+    {
+      icon: <Github size={20} color="#000000" />,
+      href: "https://github.com/masud73",
+      label: "Follow me on Facebook",
+      title: "Websites by Masud",
     },
   ];
 
@@ -72,7 +71,7 @@ export default function AboutMe() {
           <Text fontSize="1.22em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a creative designer and developer who turns ideas
             into engaging digital experiences. I build visually striking,
-            user-friendly, and performance-focused websites that showcase each
+            user-friendly, and performance-focused web apps that showcase each
             brand's unique identity and help it grow.
           </Text>
           <HStack

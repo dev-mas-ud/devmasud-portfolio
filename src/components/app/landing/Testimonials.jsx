@@ -74,7 +74,7 @@ export default function Testimonials() {
         <Stack align={"center"} px={3}>
           <Box>
             <HeadingMarker text="testimonials" />
-            <H2Heading>Some of My Happy Clients</H2Heading>
+            <H2Heading>What Clients Say</H2Heading>
           </Box>
         </Stack>
         <SimpleGrid px={2} columns={[1, 1, 2, 4]} gap={{ base: 8, md: 10 }}>

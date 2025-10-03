@@ -57,9 +57,7 @@ export default function WhatIOffer() {
         <Stack align={"center"}>
           <Box>
             <HeadingMarker text="what i offer" />
-            <H2Heading color="baseLight">
-              Here's What I Can Do for You
-            </H2Heading>
+            <H2Heading color="baseLight">Skills & Expertise</H2Heading>
           </Box>
         </Stack>
         <SlideIn>
@@ -85,7 +83,15 @@ export default function WhatIOffer() {
                     w="full"
                     shadow={"2xl"}
                   >
-                    <Box as={service.icon} size="40px" color="primary" />
+                    <Box
+                      as={service.icon}
+                      size="70px"
+                      color="primary"
+                      bg="secondary"
+                      rounded="full"
+                      p={4}
+                      mt={1}
+                    ></Box>
                   </Flex>
                   <Box p={6}>
                     <Heading

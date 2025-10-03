@@ -28,10 +28,10 @@ export default function CTASection() {
               <HeadingMarker
                 markerbg="secondary"
                 color="secondary"
-                text="Ready to get started?"
+                text="Available for Work"
               />
               <H2Heading px={{ base: 2, md: 0 }} mb={2}>
-                Let's Build Your Website Today 👋
+                Got an idea? Let's make it real
               </H2Heading>
             </Box>
           </Stack>

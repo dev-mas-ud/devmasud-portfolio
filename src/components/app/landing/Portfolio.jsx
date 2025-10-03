@@ -37,11 +37,11 @@ export default function Portfolio() {
       px={{ base: 6, md: 10 }}
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
-      bg="secondary"
+      bg="neutralDark"
     >
       <Stack align={"center"}>
         <Box>
-          <HeadingMarker text="recent works" />
+          <HeadingMarker text="recent work" />
           <H2Heading color="baseLight">My Recent Projects</H2Heading>
         </Box>
       </Stack>

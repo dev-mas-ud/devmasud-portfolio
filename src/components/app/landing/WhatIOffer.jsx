@@ -47,7 +47,7 @@ export default function WhatIOffer() {
   return (
     <Box
       id="services"
-      bg="secondary"
+      bg="neutralDark"
       as="section"
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 14 }}
@@ -57,7 +57,7 @@ export default function WhatIOffer() {
         <Stack align={"center"}>
           <Box>
             <HeadingMarker text="what i offer" />
-            <H2Heading color="baseLight">Skills & Expertise</H2Heading>
+            <H2Heading color="baseLight">Skills and Expertise</H2Heading>
           </Box>
         </Stack>
         <SlideIn>

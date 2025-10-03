@@ -58,7 +58,7 @@ export default function MainHeader() {
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          CODING WITH PASSION, CREATING WITH PURPOSE
+          Helping Nigerian businesses grow with responsive websites
         </Heading>
 
         <Text
@@ -69,8 +69,9 @@ export default function MainHeader() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          Welcome to my portfolio — a space where design meets technology to
-          create meaningful, functional web experiences.
+          I build fast, modern landing pages and full websites that help
+          businesses get more leads, sales, and trust. Delivered on time,
+          optimized for growth.
         </Text>
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>
           <Button

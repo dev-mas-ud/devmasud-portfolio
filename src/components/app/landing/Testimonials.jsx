@@ -93,14 +93,8 @@ export default function Testimonials() {
               onTouchEnd={handleTouchEnd}
             >
               <SlideIn>
-                <HStack gap={2}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <StarFill color="gold" key={`rate-${i}`} />
-                  ))}
-                </HStack>
-                <HStack gap={4} mb={2} mt={3} align={"center"}>
+                <HStack gap={4} mb={2} align={"center"}>
                   <Avatar.Root
-                    mt={2}
                     width={50}
                     height={50}
                     p={1}
@@ -118,6 +112,7 @@ export default function Testimonials() {
                       alt={business}
                     />
                   </Avatar.Root>
+
                   <Stack>
                     <Heading
                       as="h3"
@@ -129,6 +124,7 @@ export default function Testimonials() {
                     >
                       {name}
                     </Heading>
+
                     <Text
                       color={"#d7d7d7"}
                       lineHeight={1.2}
@@ -138,6 +134,11 @@ export default function Testimonials() {
                       {business}
                     </Text>
                   </Stack>
+                </HStack>
+                <HStack gap={2} mt={5}>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <StarFill color="gold" key={`rate-${i}`} />
+                  ))}
                 </HStack>
                 <Text
                   mt={4}

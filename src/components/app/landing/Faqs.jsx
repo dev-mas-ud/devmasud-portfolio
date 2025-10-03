@@ -82,7 +82,7 @@ export default function Faqs() {
                   </Accordion.ItemTrigger>
                   <Accordion.ItemContent>
                     <Accordion.ItemBody
-                      color="baseLight"
+                      color="#d7d7d7"
                       lineHeight={1.9}
                       fontSize={{ base: "1.05em", md: "1em" }}
                     >

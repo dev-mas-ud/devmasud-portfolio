@@ -31,7 +31,7 @@ export default function CTASection() {
                 text="Available for Work"
               />
               <H2Heading px={{ base: 2, md: 0 }} mb={2}>
-                Got an idea? Let's make it real
+                Let's Build Your Website Today 👋
               </H2Heading>
             </Box>
           </Stack>

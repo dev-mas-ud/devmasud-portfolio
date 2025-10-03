@@ -71,7 +71,7 @@ export default function AboutMe() {
           <Text fontSize="1.22em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a creative designer and developer who turns ideas
             into engaging digital experiences. I build visually striking,
-            user-friendly, and performance-focused web apps that showcase each
+            user-friendly, and performance-focused websites that showcase each
             brand's unique identity and help it grow.
           </Text>
           <HStack

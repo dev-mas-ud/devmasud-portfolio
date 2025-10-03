@@ -10,37 +10,35 @@ export default function WhyMe() {
   const features = [
     {
       icon: <FaCode size={37} color="#08CB00" />,
-      title: "6+ Years Creating Websites",
+      title: "Websites That Grow Nigerian Businesses",
       description:
-        "I combine design and development skills to create responsive, user-friendly websites with seamless experiences.",
+        "I design responsive websites that help Nigerian businesses attract customers and stand out online.",
     },
     {
       icon: <FaHandshake size={37} color="#08CB00" />,
-      title: "More Than Just a Developer",
+      title: "Personal Support From Start to Finish",
       description:
-        "I work closely with you from idea to launch, building solutions tailored to your goals and brand identity.",
+        "I work with you step by step, from idea to launch, to build a site that fits your goals and speaks to your audience.",
     },
     {
       icon: <FaShield size={37} color="#08CB00" />,
-      title: "Modern & Secure Websites",
+      title: "Fast, Secure, modern & Affordable",
       description:
-        "Every site is optimized for speed and security, using modern tools and best practices to support growth.",
+        "Every website is built to load quickly, stay secure, and remain affordable—so you get real value for your money.",
     },
   ];
 
   return (
     <Box
-      bg="neutralDark"
+      bg="secondary"
       px={{ base: 3, md: 16 }}
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
     >
       <Stack align={"center"} px={4}>
         <Box>
-          <HeadingMarker text="why choose me" />
-          <H2Heading color="baseLight">
-            Why You'll Love Working With Me
-          </H2Heading>
+          <HeadingMarker text="my edge" />
+          <H2Heading color="baseLight">Why Clients Choose Me</H2Heading>
         </Box>
       </Stack>
       <SimpleGrid columns={[1, 1, 3]} gap={10} px={4}>

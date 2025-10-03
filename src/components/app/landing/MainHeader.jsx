@@ -51,14 +51,14 @@ export default function MainHeader() {
           as="h1"
           w="full"
           mt={{ base: 4, md: 0 }}
-          fontSize={{ base: "2.8em", md: "4em" }}
+          fontSize={{ base: "3.3em", md: "4.5em" }}
           fontWeight={600}
           color="baseLight"
           lineHeight="1.3"
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          Helping Nigerian businesses grow with responsive websites
+          Transforming Creativity into High-Impact Web Solutions
         </Heading>
 
         <Text
@@ -69,9 +69,7 @@ export default function MainHeader() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          I build fast, modern landing pages and full websites that help
-          businesses get more leads, sales, and trust. Delivered on time,
-          optimized for growth.
+          Designed for Growth. Built for Nigeria. Ready for the World.
         </Text>
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>
           <Button

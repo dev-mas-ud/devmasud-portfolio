@@ -25,7 +25,7 @@ export default {
         ],
       },
       {
-        source: "/images/me.jpg",
+        source: "/images/dev-laptop.png",
         headers: [
           {
             key: "Cache-Control",

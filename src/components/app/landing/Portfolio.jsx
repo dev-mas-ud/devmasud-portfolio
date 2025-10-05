@@ -20,9 +20,9 @@ export default function Portfolio() {
 
   const PROJECTS = [
     {
-      title: "Event Planning Landing Page",
-      href: "https://masud73.github.io/event-planner/",
-      imgUrl: "/images/event-planner.webp",
+      title: "Real-Estate Property Listing Landing Page",
+      href: "https://lumina-estate.vercel.app/",
+      imgUrl: "/images/lumina.webp",
     },
     {
       title: "Restaurant Landing Page",

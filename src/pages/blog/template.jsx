@@ -8,21 +8,18 @@ import {
   Flex,
   Icon,
   Badge,
-  Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
-
 import { FiClock, FiCalendar } from "react-icons/fi";
 
 export default function BlogTemplate({
   title,
   imageURL,
   intro,
-  subIntro,
   readTime = "8 min read",
   publishDate = "May 15, 2024",
   category = "Business",
-  sections,
+  body,
   ctaHeading,
   ctaText,
   ctaLink,
@@ -79,25 +76,14 @@ export default function BlogTemplate({
           )}
 
           {/* Intro */}
-          <Text fontSize="lg" mb={subIntro ? 0 : 2}>
+          <Text fontSize="lg" mb={2}>
             {intro}
           </Text>
 
-          {subIntro && subIntro}
-          {/* Sections */}
-          <Stack gap={{ base: 16, md: 20 }}>
-            {sections?.map((section, idx) => (
-              <Box key={idx}>
-                <Heading as="h2" fontSize="3xl" mb={2}>
-                  {section.heading}
-                </Heading>
-                <Box fontSize={"md"}>
-                  <Text whiteSpace="preserve">{section.content}</Text>
-                  {section.contentList && section.contentList}
-                </Box>
-              </Box>
-            ))}
-          </Stack>
+          {/* Body Content */}
+          {body}
+          {/* Body Content */}
+
           {/* Call To Action */}
           {ctaHeading && (
             <Box

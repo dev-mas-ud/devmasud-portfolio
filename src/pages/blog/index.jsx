@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { Button } from "@/components/Button";
-import { ArrowRight, EnvelopeAt } from "react-bootstrap-icons";
+import { ArrowRight } from "react-bootstrap-icons";
 
 export default function BlogPosts() {
   // Sample blog post data - replace with your actual data
@@ -156,7 +156,13 @@ export default function BlogPosts() {
                     <Badge colorScheme="blue" mb={2}>
                       {post.category}
                     </Badge>
-                    <Heading as="h3" size="lg" mb={3} color="secondary">
+                    <Heading
+                      _hover={{ textDecoration: "underline" }}
+                      as="h3"
+                      size="lg"
+                      mb={3}
+                      color="secondary"
+                    >
                       {post.title}
                     </Heading>
                     <Text color="neutralDark" mb={4}>

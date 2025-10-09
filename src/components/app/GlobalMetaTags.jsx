@@ -3,7 +3,7 @@ import { DefaultSeo } from "next-seo";
 export default function GlobalMetaTags() {
   return (
     <DefaultSeo
-      defaultTitle="Websites by Masud - Creative Web Designer & Developer in Nigeria"
+      defaultTitle="Websites by Masud - Creative Web Design & Development in Nigeria"
       description="Websites by Masud helps individuals and businesses build modern, mobile-friendly, and affordable websites. From portfolios to custom web apps — I design and develop sites that perform and grow your brand."
       canonical="https://bytedesign.com.ng/"
       additionalMetaTags={[
@@ -51,7 +51,7 @@ export default function GlobalMetaTags() {
         type: "website",
         url: "https://bytedesign.com.ng/",
         title:
-          "Websites by Masud - Creative Web Designer & Developer in Nigeria",
+          "Websites by Masud - Creative Web Design & Development in Nigeria",
         description:
           "I design and develop affordable, modern websites for individuals and businesses in Nigeria. Fast, mobile-friendly, and tailored to your goals.",
         locale: "en_NG",

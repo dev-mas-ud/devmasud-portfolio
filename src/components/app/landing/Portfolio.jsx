@@ -20,14 +20,14 @@ export default function Portfolio() {
 
   const PROJECTS = [
     {
+      title: "Child Care Foundation -  NGO Website",
+      href: "https://icfc.vercel.app/",
+      imgUrl: "/images/icfc.webp",
+    },
+    {
       title: "Real-Estate Property Listing Landing Page",
       href: "https://lumina-estate.vercel.app/",
       imgUrl: "/images/lumina.webp",
-    },
-    {
-      title: "Restaurant Landing Page",
-      href: "https://masud73.github.io/my-restaurant/",
-      imgUrl: "/images/my-restaurant.webp",
     },
   ];
 
@@ -78,12 +78,12 @@ export default function Portfolio() {
                   position="relative"
                   overflow="hidden"
                   width="full"
-                  maxH="250px"
-                  minHeight="250px"
+                  maxH="350px"
+                  minHeight="350px"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
-                  onTouchStartCapture={() => setHoveredIndex(index)}
-                  onTouchCancelCapture={() => setHoveredIndex(null)}
+                  onTouchStart={() => setHoveredIndex(index)}
+                  onTouchEnd={() => setHoveredIndex(null)}
                 >
                   <Image
                     src={imgUrl}
@@ -97,7 +97,7 @@ export default function Portfolio() {
                       objectPosition: "top",
                       transform:
                         hoveredIndex === index
-                          ? "translateY(calc(-100% + 250px))"
+                          ? "translateY(calc(-100% + 350px))"
                           : "translateY(0)",
 
                       transition:
@@ -110,7 +110,7 @@ export default function Portfolio() {
 
                 <Span
                   my={4}
-                  px={1}
+                  px={4}
                   textAlign={"center"}
                   fontWeight={"bold"}
                   fontSize={"1.2em"}

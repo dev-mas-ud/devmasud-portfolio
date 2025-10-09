@@ -20,7 +20,7 @@ export default function H2Heading({
       fontSize={fontSize}
       textAlign={"left"}
       color={"neutralDaserk"}
-      lineHeight="1.5"
+      lineHeight={{ base: 1.3, md: 1.5 }}
       {...props}
     >
       {children}

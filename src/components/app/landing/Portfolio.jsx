@@ -20,14 +20,14 @@ export default function Portfolio() {
 
   const PROJECTS = [
     {
-      title: "Child Care Foundation -  NGO Website",
-      href: "https://icfc.vercel.app/",
-      imgUrl: "/images/icfc.webp",
-    },
-    {
       title: "Real-Estate Property Listing Landing Page",
       href: "https://lumina-estate.vercel.app/",
       imgUrl: "/images/lumina.webp",
+    },
+    {
+      title: "Child-Care Foundation -  NGO Website",
+      href: "https://icfc.vercel.app/",
+      imgUrl: "/images/icfc.webp",
     },
   ];
 

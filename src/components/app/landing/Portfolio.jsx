@@ -25,9 +25,19 @@ export default function Portfolio() {
       imgUrl: "/images/lumina.webp",
     },
     {
+      title: "UI/UX Design Business Landing Page",
+      href: "https://uxpert-theta.vercel.app/",
+      imgUrl: "/images/uxpert.webp",
+    },
+    {
       title: "Child-Care Foundation -  NGO Website",
       href: "https://icfc.vercel.app/",
       imgUrl: "/images/icfc.webp",
+    },
+    {
+      title: "SaaS - AI-powered platform built for American client",
+      href: "https://convertly-nu.vercel.app/",
+      imgUrl: "/images/convertly.webp",
     },
   ];
 

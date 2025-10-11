@@ -117,7 +117,6 @@ export default function Portfolio() {
                     }}
                   />
                 </Box>
-
                 <Span
                   my={4}
                   px={4}

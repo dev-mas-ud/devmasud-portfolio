@@ -20,7 +20,6 @@ export default function Testimonials() {
       avatar: "images/dentist-portrait.webp",
       name: "Dr. Emily Carter",
       business: "Owner, BrightSmile",
-
       comment:
         "Our new website doubled our appointment bookings within weeks — clean design and easy booking for patients.",
     },
@@ -28,25 +27,20 @@ export default function Testimonials() {
       avatar: "images/event-planner-agent.webp",
       name: "Ahmed Bashir",
       business: "Event Planner",
-
       comment:
         "They redesigned my website beautifully — inquiries and event bookings jumped almost immediately after launch!",
     },
-
     {
       avatar: "images/salon-owner.webp",
       name: "Grace Oko",
       business: "Owner, Glow Salon",
-
       comment:
         "They created a stylish, mobile-friendly website for my salon — clients now book appointments faster and easier than ever.",
     },
-
     {
       avatar: "images/restaurant-owner.webp",
       name: "Sofia Adeniyi",
       business: "Restaurant Owner",
-
       comment:
         "My restaurant's online orders doubled after they designed our website with an easy-to-use menu and order form.",
     },
@@ -112,7 +106,6 @@ export default function Testimonials() {
                       alt={business}
                     />
                   </Avatar.Root>
-
                   <Stack>
                     <Heading
                       as="h3"
@@ -124,7 +117,6 @@ export default function Testimonials() {
                     >
                       {name}
                     </Heading>
-
                     <Text
                       color={"#d7d7d7"}
                       lineHeight={1.2}

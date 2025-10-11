@@ -34,7 +34,7 @@ export default function Footer() {
             fontSize=".93em"
             href={href}
             target={target}
-            whiteSpace="nowrap" /* stops wrapping mid-word */
+            whiteSpace="nowrap"
           >
             {label}
           </Link>

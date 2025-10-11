@@ -2,11 +2,9 @@ import {
   Box,
   Flex,
   IconButton,
-  Image,
   CloseButton,
   Drawer,
   Portal,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import MobileMenu from "./MobileMenu";
@@ -41,6 +39,7 @@ export default function NavHeader() {
 export function NavLinks() {
   const { isOpen, onClose } = useDisclosure();
 
+  const Links = ["Home", "About Me", "Projects", "Blog", "Contact"];
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
@@ -48,7 +47,6 @@ export function NavLinks() {
     Blog: "/blog",
     Contact: "/#contact",
   };
-  const Links = ["Home", "About Me", "Projects", "Blog", "Contact"];
 
   return (
     <Box>

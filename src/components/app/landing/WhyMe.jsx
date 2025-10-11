@@ -14,7 +14,6 @@ export default function WhyMe() {
       description:
         "I build responsive websites that boost visibility and help Nigerian businesses reach more clients online.",
     },
-
     {
       icon: <FaHandshake size={37} color="#08CB00" />,
       title: "Personal Support From Start to Finish",

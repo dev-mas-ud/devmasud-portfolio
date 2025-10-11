@@ -53,7 +53,6 @@ export default function BlogTemplate({
             </Flex>
           </Box>
 
-          {/* Feature Image */}
           {imageURL && (
             <Box
               w="full"
@@ -76,15 +75,11 @@ export default function BlogTemplate({
             </Box>
           )}
 
-          {/* Intro */}
           <Text fontSize="lg">{intro}</Text>
           {subIntro && <Text fontSize={"lg"}>{subIntro}</Text>}
 
-          {/* Body Content */}
           {body}
-          {/* Body Content */}
 
-          {/* Call To Action */}
           {ctaHeading && (
             <Box
               textAlign="center"

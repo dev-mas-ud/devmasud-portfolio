@@ -55,7 +55,6 @@ const stats = [
 ];
 
 export default function Achievements() {
-  // Image animation
   const controls = useAnimation();
   const { inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
@@ -84,7 +83,6 @@ export default function Achievements() {
         mx="auto"
         gap={{ base: 0, md: 12 }}
       >
-        {/* Left Content */}
         <Box flex="1" px={{ base: 2, md: 0 }}>
           <Stack>
             <Box>
@@ -101,7 +99,6 @@ export default function Achievements() {
           </Text>
         </Box>
 
-        {/* Stats Grid */}
         <SimpleGrid
           columns={{ base: 2, md: 2 }}
           w={{ base: "full", md: "50%" }}

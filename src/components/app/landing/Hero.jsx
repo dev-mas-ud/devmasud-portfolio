@@ -5,9 +5,8 @@ import useTextSplit from "hooks/useTextSplit";
 import { useRef } from "react";
 import { ChatDots } from "react-bootstrap-icons";
 
-export default function MainHeader() {
+export default function Hero() {
   const textRef = useRef(null);
-
   useTextSplit(textRef);
 
   return (

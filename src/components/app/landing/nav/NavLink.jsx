@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 const NavLink = ({ children, href, color, target, isOpen }) => {
   const pathname = usePathname();
+  const [isNavigating, setIsNavigating] = useState(false);
   const router = useRouter();
 
   const isHashLink = href.includes("#");
@@ -15,8 +16,6 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
   const defaultColor = color || "primary";
   const hoverColor = "secondary";
   const activeColor = "baseLight";
-
-  const [isNavigating, setIsNavigating] = useState(false);
 
   const updateUrl = (url) => {
     window.history.pushState({}, "", url);
@@ -59,6 +58,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
       e.preventDefault();
       setIsNavigating(true);
       router.push(basePath);
+
       setTimeout(() => {
         const [, hash] = href.split("#");
         scrollToHash(`#${hash}`);

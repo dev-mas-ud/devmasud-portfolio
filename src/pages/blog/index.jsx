@@ -16,7 +16,6 @@ import { Button } from "@/components/Button";
 import { ArrowRight } from "react-bootstrap-icons";
 
 export default function BlogPosts() {
-  // Sample blog post data - replace with your actual data
   const blogPosts = [
     {
       id: 1,

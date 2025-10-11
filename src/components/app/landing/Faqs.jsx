@@ -7,17 +7,17 @@ export default function Faqs() {
     {
       value: "get-started",
       title: "How do we start working together on my website?",
-      text: "Just send me a message with your idea or business needs. I’ll arrange a quick chat to understand your goals, suggest the best approach, and then get started on the design and development process.",
+      text: "Just send me a message with your idea or business needs. I'll arrange a quick chat to understand your goals, suggest the best approach, and then get started on the design and development process.",
     },
     {
       value: "cost-of-website",
       title: "How much will my website cost?",
-      text: "Pricing depends on the type of website (portfolio, business site, e-commerce, etc.), the number of pages, and the features you’d like. I offer flexible packages starting from ₦30,000 to suit different needs and budgets.",
+      text: "Pricing depends on the type of website (portfolio, business site, e-commerce, etc.), the number of pages, and the features you'd like. I offer flexible packages starting from ₦30,000 to suit different needs and budgets.",
     },
     {
       value: "time-to-complete",
       title: "How long does it take to build a website?",
-      text: "A simple website can take around 7 days, while a standard business site usually takes 14–21 days. More complex projects such as e-commerce stores can take 4–6 weeks. I’ll always give you a clear timeline and keep you updated as we go.",
+      text: "A simple website can take around 7 days, while a standard business site usually takes 14-21 days. More complex projects such as e-commerce stores can take 4-6 weeks. I'll always give you a clear timeline and keep you updated as we go.",
     },
     {
       value: "hosting-domain",

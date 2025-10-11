@@ -1,4 +1,4 @@
-import MainHeader from "@/components/app/landing/MainHeader";
+import Hero from "@/components/app/landing/Hero";
 import WhyMe from "@/components/app/landing/WhyMe";
 import Faqs from "@/components/app/landing/Faqs";
 import CTASection from "@/components/app/landing/CallToAction";
@@ -11,7 +11,7 @@ import Achivements from "@/components/app/landing/Achivements";
 export default function App() {
   return (
     <>
-      <MainHeader />
+      <Hero />
       <AboutMe />
       <WhatIOffer />
       <WhyMe />

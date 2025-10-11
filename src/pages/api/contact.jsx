@@ -9,7 +9,6 @@ export default async function handler(req, res) {
 
   try {
     const { name, email, message } = req.body;
-
     const msg = {
       to: "mohdabbakarr@gmail.com",
       from: "contact@bytedesign.com.ng",

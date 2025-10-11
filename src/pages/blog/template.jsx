@@ -16,6 +16,7 @@ export default function BlogTemplate({
   title,
   imageURL,
   intro,
+  subIntro,
   readTime = "8 min read",
   publishDate = "May 15, 2024",
   category = "Business",
@@ -76,9 +77,8 @@ export default function BlogTemplate({
           )}
 
           {/* Intro */}
-          <Text fontSize="lg" mb={2}>
-            {intro}
-          </Text>
+          <Text fontSize="lg">{intro}</Text>
+          {subIntro && <Text fontSize={"lg"}>{subIntro}</Text>}
 
           {/* Body Content */}
           {body}
@@ -103,7 +103,10 @@ export default function BlogTemplate({
 
               <Button
                 as="a"
-                href={ctaLink}
+                href={
+                  ctaLink ||
+                  "https://wa.me/message/43ZJUJZP7IJFE1?message=Hello there! I'm contacting from your website."
+                }
                 size="xl"
                 bg="neutralDark"
                 color="primary"

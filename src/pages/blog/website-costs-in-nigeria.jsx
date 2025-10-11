@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import BlogTemplate from "./template";
 import { DefaultSeo } from "next-seo";
+import { Text } from "@chakra-ui/react";
 
 export default function BlogPost1() {
   return (
@@ -42,9 +42,16 @@ export default function BlogPost1() {
       />
 
       <BlogTemplate
-        title="Website Development Costs in Nigeria: The Hidden Reality"
+        category="Technology"
+        title="Understanding Website Cost in Nigeria (2025)"
         imageURL="/images/blog/website-cost.webp"
-        intro={`In today's fast-growing digital economy, Nigerian businesses cannot rely solely on physical stores. Your online presence is now a primary touchpoint for customers. But many entrepreneurs underestimate the true costs of building a professional website, leading to budget overruns and delayed launches. This guide uncovers realistic costs, hidden expenses, and actionable tips to maximize your investment.`}
+        publishDate="October 10, 2025"
+        readTime="15 min read"
+        intro={
+          "Website cost in Nigeria varies depending on the website type, features, and who builds it. Whether you are creating a business website, school website, or personal portfolio, understanding the pricing helps you plan better and avoid hidden costs"
+        }
+        subIntro="In 2025, a standard website in Nigeria costs between ₦50,000 and
+        ₦700,000, depending on design quality, functionality, and hosting setup."
         body={<BodyContent />}
         ctaHeading="Ready to Build Your Professional Website in Nigeria?"
         ctaText="I design and develop professional websites for Nigerian small businesses. Let's create a digital storefront that attracts customers and drives sales."
@@ -55,5 +62,9 @@ export default function BlogPost1() {
 }
 
 export function BodyContent() {
-  return "body content";
+  return (
+    <>
+      <Text fontSize="md">Body content</Text>
+    </>
+  );
 }

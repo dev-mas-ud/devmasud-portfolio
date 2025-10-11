@@ -20,25 +20,14 @@ export default function BlogPosts() {
   const blogPosts = [
     {
       id: 1,
-      title: "Website Costs for Nigerian Small Businesses",
+      title: "Website Cost in Nigeria (2025): Full Breakdown",
       description:
-        "Comprehensive guide on website costs for Nigerian small businesses, including realistic budgets, hidden costs, and tips to get the best value.",
+        "Discover the real website cost in Nigeria in 2025. Learn how much it costs to build business, school, or portfolio websites.",
       image: "/images/blog/website-cost.webp",
-      date: "May 15, 2024",
+      date: "October 10, 2025",
       readTime: "15 min read",
       category: "Technology",
       slug: "website-costs-in-nigeria",
-    },
-    {
-      id: 1,
-      title: "Effective Online Marketing Strategies for Nigerian Businesses",
-      description:
-        "Discover the most effective online marketing strategies for Nigerian businesses. Learn how to use SEO, social media, content marketing, and paid ads to grow your brand and attract customers.",
-      image: "/images/blog/content-marketing.webp",
-      date: "May 15, 2024",
-      readTime: "10 min read",
-      category: "Marketing",
-      slug: "effective-online-marketing-strategies",
     },
   ];
 

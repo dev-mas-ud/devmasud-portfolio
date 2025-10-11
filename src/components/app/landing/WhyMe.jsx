@@ -10,10 +10,11 @@ export default function WhyMe() {
   const features = [
     {
       icon: <FaCode size={37} color="#08CB00" />,
-      title: "Websites That Grow Nigerian Businesses",
+      title: "Modern Websites for Business Growth",
       description:
-        "I design responsive websites that help Nigerian businesses attract customers and stand out online.",
+        "I build responsive websites that boost visibility and help Nigerian businesses reach more clients online.",
     },
+
     {
       icon: <FaHandshake size={37} color="#08CB00" />,
       title: "Personal Support From Start to Finish",

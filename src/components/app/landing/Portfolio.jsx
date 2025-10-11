@@ -88,8 +88,8 @@ export default function Portfolio() {
                   position="relative"
                   overflow="hidden"
                   width="full"
-                  maxH="350px"
-                  minHeight="350px"
+                  maxH="250px"
+                  minHeight="250px"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                   onTouchStart={() => setHoveredIndex(index)}
@@ -107,7 +107,7 @@ export default function Portfolio() {
                       objectPosition: "top",
                       transform:
                         hoveredIndex === index
-                          ? "translateY(calc(-100% + 350px))"
+                          ? "translateY(calc(-100% + 250px))"
                           : "translateY(0)",
 
                       transition:

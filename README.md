@@ -1,6 +1,6 @@
-# 🌟 Masud — Web Developer Portfolio
+# 🌟 Masud — Portfolio Repo
 
-Welcome to my **web developer portfolio** repository!  
+Welcome to my **portfolio** repository!  
 This repo showcases my skills, projects, and my journey.
 
 ---
@@ -15,6 +15,17 @@ Hi, I’m **Masud** — a forward-thinking full-stack web developer passionate a
 
 ---
 
+## 🛠️ My Tech Stack
+
+I use modern, battle-tested technologies to deliver results:
+
+- **Frontend:** React / Next.js / TypeScript / Tailwind CSS / Chakra UI / GSAP
+- **Backend:** Node.js / Express / Python/Flask
+- **Databases:** MongoDB / MySQL / SQLite3
+- **Other:** Git & Github / Vercel / AWS / Google Cloud
+
+---
+
 ## 🚀 What’s Inside
 
 This repository contains:
@@ -25,14 +36,21 @@ This repository contains:
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Featured Projects
 
-I use modern, battle-tested technologies to deliver results:
+### 1️⃣ AI Blog Assistant
 
-- **Frontend:** React / Next.js / TypeScript / Tailwind CSS / Chakra UI / GSAP
-- **Backend:** Node.js / Express / Python/Flask
-- **Databases:** MongoDB / MySQL / SQLite3
-- **Other:** Git & Github / Vercel / AWS / Google Cloud
+- **Tech:** Next.js, Node.js, MongoDB, OpenAI API
+- **Description:** Generate blog ideas and drafts using AI. Includes authentication, CRUD, and dynamic content generation.
+- **Repo:** [github.com/dev-mas-ud/ai-blog-assistant](#)
+- **Live Demo:** [//todo](#)
+
+### 2️⃣ Freelancer Dashboard
+
+- **Tech:** Next.js, Flask, MySQL, TailwindCSS
+- **Description:** Track clients, tasks, and payments with a sleek dashboard UI. Designed for small businesses and freelancers.
+- **Repo:** [github.com/dev-mas-ud/freelancer-dashboard](#)
+- **Live Demo:** [//todo](#)
 
 ---
 

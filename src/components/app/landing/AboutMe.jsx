@@ -34,9 +34,9 @@ export default function AboutMe() {
     },
     {
       icon: <Github size={20} color="#000000" />,
-      href: "https://github.com/masud73",
+      href: "https://github.com/dev-mas-ud/",
       label: "Follow me on Github",
-      title: "masud-73",
+      title: "dev-mas-ud",
     },
     {
       icon: (

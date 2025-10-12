@@ -69,7 +69,7 @@ export default function GlobalMetaTags() {
             alt: "Masud - Full Stack Web Developer",
           },
         ],
-        site_name: "Masud - Web Development",
+        site_name: "Masud - Full Stack Web Developer",
       }}
     />
   );

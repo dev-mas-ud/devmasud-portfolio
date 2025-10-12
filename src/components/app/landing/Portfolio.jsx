@@ -22,7 +22,7 @@ export default function Portfolio() {
     {
       title: "Real-Estate Property Listing Landing Page",
       href: "https://lumina-estate.vercel.app/",
-      imgUrl: "/images/lumina.webp",
+      imgUrl: "/images/lumina-screenshot.webp",
     },
     {
       title: "UI/UX Design Business Landing Page",
@@ -32,7 +32,7 @@ export default function Portfolio() {
     {
       title: "Child-Care Foundation -  NGO Website",
       href: "https://icfc-ngo.vercel.app/",
-      imgUrl: "/images/icfc.webp",
+      imgUrl: "/images/icfc-screenshot.webp",
     },
     {
       title: "SaaS - AI-powered platform",

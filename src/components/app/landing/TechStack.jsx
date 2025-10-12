@@ -44,7 +44,7 @@ export default function TechStack() {
         <Stack align={"center"} px={3}>
           <Box>
             <HeadingMarker text="technologia" />
-            <H2Heading>Tools I Use</H2Heading>
+            <H2Heading>My Tech Stack</H2Heading>
           </Box>
         </Stack>
 

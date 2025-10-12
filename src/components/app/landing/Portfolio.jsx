@@ -31,11 +31,11 @@ export default function Portfolio() {
     },
     {
       title: "Child-Care Foundation -  NGO Website",
-      href: "https://icfc.vercel.app/",
+      href: "https://icfc-ngo.vercel.app/",
       imgUrl: "/images/icfc.webp",
     },
     {
-      title: "SaaS - AI-powered platform built for American client",
+      title: "SaaS - AI-powered platform",
       href: "https://convertly-nu.vercel.app/",
       imgUrl: "/images/convertly.webp",
     },

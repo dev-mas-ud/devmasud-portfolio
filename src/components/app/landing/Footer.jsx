@@ -2,10 +2,8 @@ import { Box, Link, HStack } from "@chakra-ui/react";
 
 export default function Footer() {
   const LEGALS = [
-    { label: "Services", href: "/#services" },
     { label: "Projects", href: "/#projects" },
-    { label: "Testimonials", href: "/#testimonials" },
-    { label: "FAQs", href: "/#faqs" },
+    { label: "About Me", href: "/#about-me" },
     { label: "Blog", href: "/blog" },
   ];
 

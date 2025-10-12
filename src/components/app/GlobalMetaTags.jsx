@@ -3,14 +3,14 @@ import { DefaultSeo } from "next-seo";
 export default function GlobalMetaTags() {
   return (
     <DefaultSeo
-      defaultTitle="Websites by Masud - Creative Web Design & Development in Nigeria"
-      description="Websites by Masud helps individuals and businesses build modern, mobile-friendly, and affordable websites. From portfolios to custom web apps — I design and develop sites that perform and grow your brand."
+      defaultTitle="Masud - Full Stack Web Developer | React, Next.js, Node & Flask"
+      description="I build fast, scalable, and visually engaging web applications for startups, businesses, and personal projects worldwide. Specializing in React, Next.js, Node.js, Express, Flask, and modern web solutions that perform and grow your brand."
       canonical="https://bytedesign.com.ng/"
       additionalMetaTags={[
         {
           name: "keywords",
           content:
-            "websites by Masud, web design Nigeria, affordable website development Nigeria, personal portfolio web designer Nigeria, Lagos web designer, business website Nigeria, custom websites Nigeria, React.js developer Nigeria",
+            "full stack developer, React developer, Next.js developer, Node.js developer, Flask developer, web development, modern web apps, SaaS web apps, portfolio web developer, scalable web solutions",
         },
         {
           name: "charset",
@@ -51,25 +51,25 @@ export default function GlobalMetaTags() {
         type: "website",
         url: "https://bytedesign.com.ng/",
         title:
-          "Websites by Masud - Creative Web Design & Development in Nigeria",
+          "Masud - Full Stack Web Developer | React, Next.js, Node & Flask",
         description:
-          "I design and develop affordable, modern websites for individuals and businesses in Nigeria. Fast, mobile-friendly, and tailored to your goals.",
-        locale: "en_NG",
+          "I design and develop fast, scalable, and modern web applications for clients and startups worldwide. From portfolios to custom SaaS apps — I deliver solutions that perform and grow your brand.",
+        locale: "en_US",
         images: [
           {
             url: "https://bytedesign.com.ng/images/dev-laptop.png",
             width: 1200,
             height: 630,
-            alt: "Websites by Masud - Creative Web Developer Nigeria",
+            alt: "Masud - Full Stack Web Developer",
           },
           {
             url: "https://bytedesign.com.ng/images/dev-laptop.png",
             width: 2400,
             height: 1260,
-            alt: "Websites by Masud - Creative Web Developer Nigeria",
+            alt: "Masud - Full Stack Web Developer",
           },
         ],
-        site_name: "Websites by Masud",
+        site_name: "Masud - Web Development",
       }}
     />
   );

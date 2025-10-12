@@ -127,7 +127,7 @@ export default function Portfolio() {
                   {title}
                 </Span>
                 <Button variant="solid" size="lg" mb={6}>
-                  Check Out <ArrowUpRightSquare />{" "}
+                  Live Demo <ArrowUpRightSquare />{" "}
                 </Button>
               </Card.Body>
             </Card.Root>

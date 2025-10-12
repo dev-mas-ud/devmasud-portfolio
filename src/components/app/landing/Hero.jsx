@@ -68,8 +68,9 @@ export default function Hero() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          Designed for Growth. Built for Nigeria. Ready for the World.
+          Designed for Growth. Built for Impact. Ready for the World.
         </Text>
+
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>
           <Button
             as="a"

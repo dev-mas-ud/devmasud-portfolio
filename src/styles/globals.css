@@ -78,14 +78,6 @@ html {
   -webkit-user-select: none;
 }
 
-.pre-split {
-  opacity: 1; /* visible immediately */
-}
-
-img {
-  pointer-events: none;
-}
-
 .bg-secondary {
   background-color: #253900 !important;
 }
@@ -151,17 +143,4 @@ img {
     justify-content: center;
     width: 100%;
   }
-}
-
-/* Input */
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  appearance: textfield;
-  -moz-appearance: textfield;
 }

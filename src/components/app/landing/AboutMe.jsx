@@ -1,11 +1,20 @@
-import { Box, Flex, HStack, Span, Stack, Text, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  HStack,
+  Span,
+  Stack,
+  Image as ChakraImage,
+  Text,
+  Link,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import H2Heading from "./H2Heading";
 import { Button } from "@/components/Button";
 import { SlideIn } from "@/components/Animations";
 import { useCallback, useState } from "react";
 import HeadingMarker from "./HeadingMarker";
-import { Github, Facebook, Linkedin, TwitterX } from "react-bootstrap-icons";
+import { Github, Linkedin, TwitterX } from "react-bootstrap-icons";
 
 export default function AboutMe() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -18,12 +27,6 @@ export default function AboutMe() {
       title: "@DevMasud",
     },
     {
-      icon: <Facebook size={20} color="#000000" />,
-      href: "https://web.facebook.com/profile.php?id=61581299132973",
-      label: "Follow me on Facebook",
-      title: "Websites By Masud",
-    },
-    {
       icon: <Linkedin size={20} color="#000000" />,
       href: "https://www.linkedin.com/in/dev-masud/",
       label: "Follow me on LinkedIn",
@@ -32,8 +35,22 @@ export default function AboutMe() {
     {
       icon: <Github size={20} color="#000000" />,
       href: "https://github.com/masud73",
-      label: "Follow me on Facebook",
-      title: "Websites by Masud",
+      label: "Follow me on Github",
+      title: "masud-73",
+    },
+    {
+      icon: (
+        <ChakraImage
+          height={5}
+          w={5}
+          objectFit={"cover"}
+          src="/images/fiverr-icon.png"
+          alt="fiverr logo"
+        />
+      ),
+      href: "https://www.fiverr.com/s/wkG9llK",
+      label: "Follow me on Fiverr",
+      title: "Masud MS",
     },
   ];
 
@@ -68,11 +85,46 @@ export default function AboutMe() {
         <Box flex="1" zIndex={2} px={{ base: 2, md: 0 }}>
           <HeadingMarker text="WHO AM I" />
           <H2Heading mb={2}>About Me</H2Heading>
-          <Text fontSize="1.22em" lineHeight={1.9} mb={6} color="neutralDark">
-            Hi, I'm Masud — a creative full-stack developer who turns ideas into
-            engaging digital experiences. I build visually striking,
-            user-friendly, and performance-focused websites that showcase each
-            brand's unique identity and help it grow.
+          <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
+            Hi, I'm Masud — a creative full-stack developer. I care about
+            building web solutions that actually move the needle — products that
+            are fast, intuitive, and built to scale. I combine technical
+            precision with design thinking to deliver solutions that look as
+            good as they perform.
+          </Text>
+
+          <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
+            My core stack includes{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              React
+            </Span>
+            ,{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              Next.js
+            </Span>
+            ,{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              Node.js
+            </Span>
+            ,{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              Express
+            </Span>
+            ,{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              MongoDB
+            </Span>
+            ,{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              MySQL
+            </Span>
+            , and{" "}
+            <Span fontWeight={"semibold"} color="neutralDark">
+              Python
+            </Span>{" "}
+            — allowing me to handle both frontend experiences and backend logic
+            seamlessly. Whether it's a startup MVP or a full business platform,
+            I focus on delivering clean, efficient, and impactful solutions.
           </Text>
           <HStack
             id="about-btns-wrapper"
@@ -93,7 +145,7 @@ export default function AboutMe() {
               <Span lineHeight={0} fontSize={".9em"} color={"#808080"}>
                 Follow Me
               </Span>
-              <Stack direction={"row"} gap={6}>
+              <Stack direction={"row"} gap={{ base: 5, md: 6 }}>
                 {SOCIAL_ICONS.map(({ href, label, title, icon }) => (
                   <Link
                     key={`footer-social-icon-${label}`}

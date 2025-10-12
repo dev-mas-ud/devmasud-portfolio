@@ -10,10 +10,8 @@ import GlobalMetaTags from "@/components/app/GlobalMetaTags";
 import Head from "next/head";
 import Script from "next/script";
 import ScrollToTopButton from "@/components/ScrollToTop";
-import { Stack } from "@chakra-ui/react";
 import Layout from "Layout";
 import "../styles/globals.css";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -58,7 +56,6 @@ export default function MyApp({ Component, pageProps }) {
     <Provider p={0} m={0}>
       <GlobalMetaTags />
       <Head>
-        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@devmasud" />
         <meta name="twitter:creator" content="@devmasud" />
@@ -90,7 +87,7 @@ export default function MyApp({ Component, pageProps }) {
               email: "contact@bytedesign.com.ng",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "12 Allen Avenue", // update with real
+                streetAddress: "12 Allen Avenue",
                 addressLocality: "Ikeja",
                 addressRegion: "Lagos",
                 postalCode: "100001",
@@ -98,7 +95,7 @@ export default function MyApp({ Component, pageProps }) {
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 6.6018, // update with your coordinates
+                latitude: 6.6018,
                 longitude: 3.3515,
               },
               openingHoursSpecification: [
@@ -168,18 +165,7 @@ export default function MyApp({ Component, pageProps }) {
 
       {is404 ? renderContent() : <Layout>{renderContent()}</Layout>}
 
-      <Stack
-        position={"fixed"}
-        right={{ base: 5, md: 5 }}
-        bottom={{ base: 5, md: 10 }}
-        zIndex={1000}
-        transition={".4s"}
-        alignItems={"center"}
-        gap={16}
-      >
-        <WhatsAppFloat />
-        <ScrollToTopButton />
-      </Stack>
+      <ScrollToTopButton />
       <Analytics />
     </Provider>
   );

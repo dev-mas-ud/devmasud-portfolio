@@ -39,7 +39,12 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <Box>
+    <Box
+      position={"fixed"}
+      right={{ base: 5, md: 5 }}
+      bottom={{ base: 5, md: 10 }}
+      zIndex={1000}
+    >
       {isVisible && (
         <IconButton
           onClick={scrollToTop}

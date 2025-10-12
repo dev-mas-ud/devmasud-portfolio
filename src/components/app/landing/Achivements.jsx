@@ -92,10 +92,10 @@ export default function Achievements() {
               </H2Heading>
             </Box>
           </Stack>
-          <Text fontSize="1.22em" lineHeight={1.9} mb={10} color="baseLight">
+          <Text fontSize="1.12em" lineHeight={1.9} mb={10} color="baseLight">
             Over the years, I've built a reputation for delivering high-quality
             digital solutions. These milestones represent my dedication,
-            creativity, and impact in the web design industry.
+            creativity, and impact in the web development industry.
           </Text>
         </Box>
 

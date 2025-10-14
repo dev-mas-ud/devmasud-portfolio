@@ -50,7 +50,7 @@ export default function Hero() {
           as="h1"
           w="full"
           mt={{ base: 4, md: 0 }}
-          fontSize={{ base: "3.3em", md: "4.5em" }}
+          fontSize={{ base: "3.3em", md: "4.3em" }}
           fontWeight={600}
           color="baseLight"
           lineHeight="1.3"

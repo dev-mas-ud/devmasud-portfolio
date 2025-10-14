@@ -19,20 +19,10 @@ export default function Portfolio() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const PROJECTS = [
-    // {
-    //   title: "Real-Estate Property Listing Landing Page",
-    //   href: "https://lumina-estate.vercel.app/",
-    //   imgUrl: "/images/lumina-screenshot.webp",
-    // },
-    // {
-    //   title: "UI/UX Design Business Landing Page",
-    //   href: "https://uxpert-theta.vercel.app/",
-    //   imgUrl: "/images/uxpert.webp",
-    // },
     {
-      title: "Child-Care Foundation -  NGO Website",
-      href: "https://icfc-ngo.vercel.app/",
-      imgUrl: "/images/icfc-screenshot.webp",
+      title: "UI/UX Design Business Landing Page",
+      href: "https://uxpert-theta.vercel.app/",
+      imgUrl: "/images/uxpert.webp",
     },
     {
       title: "SaaS - AI-powered platform",

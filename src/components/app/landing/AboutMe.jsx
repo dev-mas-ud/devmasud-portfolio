@@ -104,11 +104,11 @@ export default function AboutMe() {
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
-              Node.js
+              Express
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
-              Express
+              Node.js
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">

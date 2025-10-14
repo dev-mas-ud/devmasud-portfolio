@@ -39,12 +39,11 @@ export default function NavHeader() {
 export function NavLinks() {
   const { isOpen, onClose } = useDisclosure();
 
-  const Links = ["Home", "About Me", "Projects", "Blog", "Contact"];
+  const Links = ["Home", "About Me", "Projects", "Contact"];
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
     Projects: "/#projects",
-    Blog: "/blog",
     Contact: "/#contact",
   };
 

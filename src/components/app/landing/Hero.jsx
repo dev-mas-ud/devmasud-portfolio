@@ -57,7 +57,7 @@ export default function Hero() {
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          Transforming Creativity into High-Impact Web Solutions
+          Hey 👋, I'm Masud — Full-Stack Developer
         </Heading>
 
         <Text
@@ -68,7 +68,7 @@ export default function Hero() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          Designed for Growth. Built for Impact. Ready for the World.
+          Coding. Testing. Deploying. Repeating
         </Text>
 
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>

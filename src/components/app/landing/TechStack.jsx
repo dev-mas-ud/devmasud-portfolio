@@ -1,14 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Text,
-  Avatar,
-  Image,
-  Flex,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Container, Image, Flex, Stack } from "@chakra-ui/react";
 import H2Heading from "./H2Heading";
 import HeadingMarker from "./HeadingMarker";
 
@@ -25,10 +15,8 @@ const techs = [
   { name: "MongoDB", src: "/images/mongodb.svg" },
   { name: "MySQL", src: "/images/mysql.svg" },
   { name: "Python", src: "/images/python.svg" },
-  { name: "Flask", src: "/images/flask.svg" },
-  { name: "Git", src: "/images/git.svg" },
-  { name: "Google Cloud", src: "/images/google-cloud.svg" },
   { name: "AWS", src: "/images/aws.svg" },
+  { name: "Google Cloud", src: "/images/google-cloud.svg" },
 ];
 
 export default function TechStack() {
@@ -43,7 +31,7 @@ export default function TechStack() {
       <Container maxW="container.lg" p="0">
         <Stack align={"center"} px={3}>
           <Box>
-            <HeadingMarker text="technologia" />
+            <HeadingMarker text="technology" />
             <H2Heading>My Tech Stack</H2Heading>
           </Box>
         </Stack>

@@ -4,7 +4,6 @@ export default function Footer() {
   const LEGALS = [
     { label: "Projects", href: "/#projects" },
     { label: "About Me", href: "/#about-me" },
-    { label: "Blog", href: "/blog" },
   ];
 
   return (

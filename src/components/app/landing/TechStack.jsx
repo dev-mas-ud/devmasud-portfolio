@@ -3,20 +3,15 @@ import H2Heading from "./H2Heading";
 import HeadingMarker from "./HeadingMarker";
 
 const techs = [
-  { name: "HTML", src: "/images/html.svg" },
-  { name: "CSS", src: "/images/css.svg" },
-  { name: "JavaScript", src: "/images/javascript.svg" },
-  { name: "TypeScript", src: "/images/typescript.svg" },
   { name: "React", src: "/images/react.svg" },
   { name: "Next.js", src: "/images/next.svg" },
-  { name: "TailwindCSS", src: "/images/tailwind.svg" },
-  { name: "Node.js", src: "/images/nodejs.svg" },
-  { name: "Express", src: "/images/express.svg" },
-  { name: "MongoDB", src: "/images/mongodb.svg" },
-  { name: "MySQL", src: "/images/mysql.svg" },
-  { name: "Python", src: "/images/python.svg" },
-  { name: "AWS", src: "/images/aws.svg" },
-  { name: "Google Cloud", src: "/images/google-cloud.svg" },
+  { name: "JavaScript", src: "/images/javascript.svg" },
+  { name: "TypeScript", src: "/images/typescript.svg" },
+  { name: "HTML", src: "/images/html.svg" },
+  { name: "CSS", src: "/images/css.svg" },
+  { name: "Tailwind CSS", src: "/images/tailwind.svg" },
+  { name: "Vercel", src: "/images/vercel.svg" },
+  { name: "Git", src: "/images/git.svg" },
 ];
 
 export default function TechStack() {

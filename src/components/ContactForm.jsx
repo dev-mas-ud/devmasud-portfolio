@@ -125,7 +125,7 @@ export default function ContackForm() {
             outlineColor={"primary"}
             rounded="lg"
             borderColor={"#808080"}
-            placeholder="Your Message"
+            placeholder="Your Message..."
             name="message"
             value={form.message}
             onChange={handleChange}

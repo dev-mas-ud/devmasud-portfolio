@@ -86,9 +86,9 @@ export default function AboutMe() {
           <HeadingMarker text="WHO AM I" />
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
-            Hi, I'm Masud — a creative full-stack developer. I care about
-            building web solutions that actually move the needle — products that
-            are fast, intuitive, and built to scale. I combine technical
+            Hi, I'm Masud — a creative front-end developer. I care about
+            building web experiences that actually move the needle — products
+            that are fast, intuitive, and built to scale. I combine technical
             precision with design thinking to deliver solutions that look as
             good as they perform.
           </Text>
@@ -104,27 +104,19 @@ export default function AboutMe() {
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
-              Express
+              JavaScript
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
-              Node.js
+              TypeScript
             </Span>
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
-              MongoDB
-            </Span>
-            ,{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              MySQL
-            </Span>
-            , and{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              Python
+              Tailwind CSS
             </Span>{" "}
-            — allowing me to handle both frontend experiences and backend logic
-            seamlessly. Whether it's a startup MVP or a full business platform,
-            I focus on delivering clean, efficient, and impactful solutions.
+            — allowing me to handle frontend experiences seamlessly. Whether
+            it's a startup MVP or a full business platform, I focus on
+            delivering clean, efficient, and impactful solutions.
           </Text>
           <HStack
             id="about-btns-wrapper"

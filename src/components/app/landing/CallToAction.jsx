@@ -1,7 +1,6 @@
 import { Box, Container, Stack, Text } from "@chakra-ui/react";
 import { Button } from "@/components/Button";
 import H2Heading from "./H2Heading";
-import { Whatsapp } from "react-bootstrap-icons";
 import ContackForm from "@/components/ContactForm";
 import HeadingMarker from "./HeadingMarker";
 import { FaPhone } from "react-icons/fa";
@@ -59,7 +58,7 @@ export default function CTASection() {
               variant={"solid"}
               width={{ base: "100%", md: "auto" }}
             >
-              <Whatsapp /> Reach Out via WhatsApp
+              Hire Me 👋
             </Button>
             <Button
               as="a"

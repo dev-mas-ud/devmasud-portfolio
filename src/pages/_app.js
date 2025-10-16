@@ -117,6 +117,7 @@ export default function MyApp({ Component, pageProps }) {
                 "https://web.facebook.com/profile.php?id=61581299132973",
                 "https://www.instagram.com/dev__masud",
                 "https://www.linkedin.com/in/dev-masud",
+                "https://github.com/dev-mas-ud",
               ],
               areaServed: [
                 {

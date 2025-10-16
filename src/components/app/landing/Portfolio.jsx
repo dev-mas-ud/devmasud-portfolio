@@ -25,9 +25,19 @@ export default function Portfolio() {
       imgUrl: "/images/uxpert.webp",
     },
     {
+      title: "Real-Estate Landing Page Design",
+      href: "https://lumina-estate.vercel.app/",
+      imgUrl: "/images/lumina-screenshot.webp",
+    },
+    {
       title: "SaaS - AI-powered platform",
       href: "https://convertly-nu.vercel.app/",
       imgUrl: "/images/convertly.webp",
+    },
+    {
+      title: "ICFC - Non-Governmental Organization Website",
+      href: "https://icfc-ngo.vercel.app/",
+      imgUrl: "/images/icfc-screenshot.webp",
     },
   ];
 

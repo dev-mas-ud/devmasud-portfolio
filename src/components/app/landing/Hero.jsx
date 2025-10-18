@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 import Image from "next/image";
 import useTextSplit from "hooks/useTextSplit";
 import { useRef } from "react";
-import { ChatDots } from "react-bootstrap-icons";
+import { PersonWorkspace } from "react-bootstrap-icons";
 
 export default function Hero() {
   const textRef = useRef(null);
@@ -62,7 +62,7 @@ export default function Hero() {
 
         <Text
           fontSize={{ base: "md", md: "lg" }}
-          color="#e8e8e8"
+          color="gray.300"
           lineHeight="1.7"
           w={{ base: "full", md: "60vw" }}
           textAlign={"center"}
@@ -80,8 +80,7 @@ export default function Hero() {
             size={"xl"}
             variant="solid"
           >
-            <ChatDots />
-            Let's Talk
+            <PersonWorkspace /> Hire Me
           </Button>
           <Button
             border="sm"
@@ -91,7 +90,7 @@ export default function Hero() {
             href="/#projects"
             size={"xl"}
           >
-            View Portfolio
+            View My Work
           </Button>
         </HStack>
       </VStack>

@@ -57,19 +57,19 @@ export default function MyApp({ Component, pageProps }) {
       <GlobalMetaTags />
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@devmasud" />
-        <meta name="twitter:creator" content="@devmasud" />
+        <meta name="twitter:site" content="@DevMasud" />
+        <meta name="twitter:creator" content="@DevMasud" />
         <meta
           name="twitter:title"
-          content="Websites by Masud - Affordable Web Design & Development in Nigeria"
+          content="Masud - Front-End Web Developer | React, Next.js, Javascript & Tailwind Css"
         />
         <meta
           name="twitter:description"
-          content="Websites by Masud helps Nigerian businesses grow online with modern, mobile-friendly, and affordable websites."
+          content="I build fast, scalable, and visually engaging web webistes for startups, businesses, and personal projects worldwide. Specializing in React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web solutions that perform and grow your brand."
         />
         <meta
           name="twitter:image"
-          content="https://bytedesign.com.ng/images/me.jpg"
+          content="https://bytedesign.com.ng/images/og-banner.png"
         />
         <script
           type="application/ld+json"
@@ -80,9 +80,9 @@ export default function MyApp({ Component, pageProps }) {
               "@id": "https://bytedesign.com.ng/#organization",
               name: "ByteDesign",
               url: "https://bytedesign.com.ng",
-              image: "https://bytedesign.com.ng/images/me.jpg",
+              image: "https://bytedesign.com.ng/images/og-banner.png",
               description:
-                "Websites by Masud creates affordable, mobile-friendly websites and web apps for Nigerian businesses.",
+                "I build fast, scalable, and visually engaging web webistes for startups, businesses, and personal projects worldwide. Specializing in React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web solutions that perform and grow your brand.",
               telephone: "+2347065656558",
               email: "contact@bytedesign.com.ng",
               address: {

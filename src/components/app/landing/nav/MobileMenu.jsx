@@ -1,5 +1,7 @@
 import { Box, Stack } from "@chakra-ui/react";
 import NavLink from "./NavLink";
+import { Button } from "@/components/Button";
+import { Github } from "react-bootstrap-icons";
 
 const MobileMenu = ({ Links, linkUrls }) => {
   return (
@@ -10,11 +12,19 @@ const MobileMenu = ({ Links, linkUrls }) => {
             color="neutralDark"
             key={link}
             href={linkUrls[link]}
-            target={link === "Blog" ? "_blank" : "_parent"}
+            target={"_parent"}
           >
             {link}
           </NavLink>
         ))}
+        <NavLink
+          color="neutralDark"
+          rel="noopener noreferrer"
+          href="https://github.com/dev-mas-ud"
+          target={"_blank"}
+        >
+          Github
+        </NavLink>
       </Stack>
     </Box>
   );

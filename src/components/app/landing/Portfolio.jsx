@@ -5,12 +5,14 @@ import {
   Span,
   useBreakpointValue,
   Stack,
+  HStack,
+  Badge,
+  Button,
 } from "@chakra-ui/react";
 
 import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
-import { Button } from "@/components/Button";
-import { ArrowUpRightSquare } from "react-bootstrap-icons";
+import { ArrowUpRightSquare, Github } from "react-bootstrap-icons";
 import HeadingMarker from "./HeadingMarker";
 import { useState } from "react";
 import Image from "next/image";
@@ -20,24 +22,36 @@ export default function Portfolio() {
 
   const PROJECTS = [
     {
-      title: "UI/UX Design Business Landing Page",
+      description:
+        "A clean, responsive business landing page combining modern UI design with intuitive UX to engage visitors and drive conversions.",
       href: "https://uxpert-theta.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/uxpert",
       imgUrl: "/images/uxpert.webp",
+      stack: ["React", "Tailwind CSS"],
     },
     {
-      title: "Real-Estate Landing Page Design",
+      description:
+        "A modern, responsive real estate landing page designed to showcase properties with clean visuals and an intuitive user experience.",
       href: "https://lumina-estate.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/lumina-estate",
       imgUrl: "/images/lumina-screenshot.webp",
+      stack: ["Next.js", "Tailwind CSS", "Chakra UI"],
     },
     {
-      title: "SaaS - AI-powered platform",
+      description:
+        "A sleek SaaS landing page showcasing an AI-powered platform with modern design, clear messaging, and engaging visuals.",
       href: "https://convertly-nu.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/convertly",
       imgUrl: "/images/convertly.webp",
+      stack: ["React", "Radix UI", "Tailwind CSS", "Framer Motion"],
     },
     {
-      title: "ICFC - Non-Governmental Organization Website",
+      description:
+        "A professional NGO website designed to highlight ICFC's mission, programs, and community impact through a clean, accessible layout.",
       href: "https://icfc-ngo.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/icfc-ngo",
       imgUrl: "/images/icfc-screenshot.webp",
+      stack: ["Next.js", "Tailwind CSS", "Chakra UI"],
     },
   ];
 
@@ -55,20 +69,13 @@ export default function Portfolio() {
           <H2Heading color="baseLight">My Recent Projects</H2Heading>
         </Box>
       </Stack>
-      <SimpleGrid columns={[1, 1, 2]} gap={10}>
-        {PROJECTS.map(({ title, imgUrl, href }, index) => (
+      <SimpleGrid columns={[1, 2, 2, 4]} gap={8}>
+        {PROJECTS.map(({ description, imgUrl, href, repo, stack }, index) => (
           <SlideIn
             key={`project-${index}`}
             direction={useBreakpointValue({ base: "right", md: "up" })}
           >
             <Card.Root
-              cursor={"pointer"}
-              outline={"none"}
-              textDecoration={"none"}
-              as="a"
-              rel="noopener noreferrer"
-              href={href}
-              target="_blank"
               rounded="3xl"
               bg="baseLight"
               overflow={"hidden"}
@@ -88,8 +95,8 @@ export default function Portfolio() {
                   position="relative"
                   overflow="hidden"
                   width="full"
-                  maxH="250px"
-                  minHeight="250px"
+                  maxH="200px"
+                  minHeight="200px"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                   onTouchStart={() => setHoveredIndex(index)}
@@ -97,9 +104,9 @@ export default function Portfolio() {
                 >
                   <Image
                     src={imgUrl}
-                    alt={title}
-                    width={600}
-                    height={400}
+                    alt={description}
+                    width={400}
+                    height={200}
                     style={{
                       width: "100%",
                       height: "auto",
@@ -117,18 +124,67 @@ export default function Portfolio() {
                     }}
                   />
                 </Box>
-                <Span
-                  my={4}
-                  px={4}
-                  textAlign={"center"}
-                  fontWeight={"bold"}
-                  fontSize={"1.2em"}
-                >
-                  {title}
-                </Span>
-                <Button variant="solid" size="lg" mb={6}>
-                  Live Demo <ArrowUpRightSquare />{" "}
-                </Button>
+
+                <Stack gap={3} p={4}>
+                  {stack?.length > 0 && (
+                    <HStack gap={2} wrap="wrap">
+                      {stack.map((stack, i) => (
+                        <Badge
+                          variant={"subtle"}
+                          key={`stack-${i}`}
+                          bg="gray.200"
+                          px={2.5}
+                          fontWeight={"semibold"}
+                          py={1}
+                          colorPalette={"black"}
+                        >
+                          {stack}
+                        </Badge>
+                      ))}
+                    </HStack>
+                  )}
+
+                  <Span textAlign={"left"} color="gray.600" fontSize={"1em"}>
+                    {description}
+                  </Span>
+
+                  <HStack gap={4} wrap={"wrap"}>
+                    <Button
+                      as="a"
+                      color="neutralDark"
+                      fontWeight={"semibold"}
+                      variant="ghost"
+                      bg="gray.200"
+                      rounded="full"
+                      rel="noopener noreferrer"
+                      href={href}
+                      target="_blank"
+                      _hover={{
+                        bg: "gray.300",
+                      }}
+                      size="sm"
+                    >
+                      <ArrowUpRightSquare /> Live Demo
+                    </Button>
+                    <Button
+                      as="a"
+                      color="neutralDark"
+                      fontWeight={"semibold"}
+                      variant="ghost"
+                      bg="gray.200"
+                      rounded="full"
+                      href={repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      _hover={{
+                        bg: "gray.300",
+                      }}
+                      size="sm"
+                    >
+                      <Github /> Github
+                    </Button>
+                  </HStack>
+                </Stack>
               </Card.Body>
             </Card.Root>
           </SlideIn>

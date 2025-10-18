@@ -18,7 +18,7 @@ export default function TechStack() {
   return (
     <Box
       id="Stack"
-      bg="baseLight"
+      bg="neutralDark"
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
       px={0}
@@ -27,7 +27,7 @@ export default function TechStack() {
         <Stack align={"center"} px={3}>
           <Box>
             <HeadingMarker text="technology" />
-            <H2Heading>My Tech Stack</H2Heading>
+            <H2Heading color="baseLight">My Tech Stack</H2Heading>
           </Box>
         </Stack>
 

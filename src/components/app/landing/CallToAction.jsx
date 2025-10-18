@@ -4,6 +4,7 @@ import H2Heading from "./H2Heading";
 import ContackForm from "@/components/ContactForm";
 import HeadingMarker from "./HeadingMarker";
 import { FaPhone } from "react-icons/fa";
+import { PersonWorkspace } from "react-bootstrap-icons";
 
 export default function CTASection() {
   return (
@@ -58,7 +59,7 @@ export default function CTASection() {
               variant={"solid"}
               width={{ base: "100%", md: "auto" }}
             >
-              Hire Me 👋
+              <PersonWorkspace /> Hire Me
             </Button>
             <Button
               as="a"

@@ -14,7 +14,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
   const isActive = pathname === basePath && !isHashLink;
 
   const defaultColor = color || "primary";
-  const hoverColor = defaultColor;
+  const hoverColor = "primary/50";
   const activeColor = "baseLight";
 
   const updateUrl = (url) => {

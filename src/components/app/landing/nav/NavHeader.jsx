@@ -12,6 +12,8 @@ import DesktopLinks from "./DesktopLinks";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import Brand from "../../Brand";
+import { Github } from "react-bootstrap-icons";
+import { Button } from "@/components/Button";
 
 export default function NavHeader() {
   return (
@@ -31,6 +33,20 @@ export default function NavHeader() {
       <Flex align="center" justify="space-between">
         <Brand />
         <NavLinks />
+        <Button
+          id="github-btn"
+          display="none"
+          border="sm"
+          size="sm"
+          borderColor="baseLight"
+          target="_blank"
+          rel="noreferrer noopener"
+          as="a"
+          textDecoration="none"
+          href="https://github.com/dev-mas-ud"
+        >
+          <Github /> Github
+        </Button>
       </Flex>
     </Box>
   );
@@ -39,11 +55,12 @@ export default function NavHeader() {
 export function NavLinks() {
   const { isOpen, onClose } = useDisclosure();
 
-  const Links = ["Home", "About Me", "Projects", "Contact"];
+  const Links = ["Home", "About Me", "My Work", "Resumé", "Contact"];
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
-    Projects: "/#projects",
+    "My Work": "/#my-work",
+    Resumé: "/#resumé",
     Contact: "/#contact",
   };
 

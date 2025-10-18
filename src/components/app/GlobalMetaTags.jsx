@@ -57,13 +57,13 @@ export default function GlobalMetaTags() {
         locale: "en_US",
         images: [
           {
-            url: "https://bytedesign.com.ng/images/dev-laptop.png",
+            url: "https://bytedesign.com.ng/images/og-banner.png",
             width: 1200,
             height: 630,
             alt: "Masud - Front-End Web Developer",
           },
           {
-            url: "https://bytedesign.com.ng/images/dev-laptop.png",
+            url: "https://bytedesign.com.ng/images/og-banner.png",
             width: 2400,
             height: 1260,
             alt: "Masud - Front-End Web Developer",

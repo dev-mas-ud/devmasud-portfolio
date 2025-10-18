@@ -115,7 +115,8 @@ html {
 }
 
 @media screen and (min-width: 1140px) {
-  #desktop-links {
+  #desktop-links,
+  #github-btn {
     display: flex;
   }
 

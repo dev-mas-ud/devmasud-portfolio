@@ -1,20 +1,16 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Span,
-  Stack,
-  Image as ChakraImage,
-  Text,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Span, Stack, Text, Link } from "@chakra-ui/react";
 import Image from "next/image";
 import H2Heading from "./H2Heading";
 import { Button } from "@/components/Button";
 import { SlideIn } from "@/components/Animations";
 import { useCallback, useState } from "react";
 import HeadingMarker from "./HeadingMarker";
-import { Github, Linkedin, TwitterX } from "react-bootstrap-icons";
+import {
+  Github,
+  Linkedin,
+  PersonWorkspace,
+  TwitterX,
+} from "react-bootstrap-icons";
 
 export default function AboutMe() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -37,20 +33,6 @@ export default function AboutMe() {
       href: "https://github.com/dev-mas-ud/",
       label: "Follow me on Github",
       title: "dev-mas-ud",
-    },
-    {
-      icon: (
-        <ChakraImage
-          height={5}
-          w={5}
-          objectFit={"cover"}
-          src="/images/fiverr-icon.png"
-          alt="fiverr logo"
-        />
-      ),
-      href: "https://www.fiverr.com/s/wkG9llK",
-      label: "Follow me on Fiverr",
-      title: "Masud MS",
     },
   ];
 
@@ -131,7 +113,7 @@ export default function AboutMe() {
               size="xl"
               textDecoration="none"
             >
-              Hire Me 👋
+              <PersonWorkspace /> Hire Me
             </Button>
             <Stack id="social-wrapper" gap={4}>
               <Span lineHeight={0} fontSize={".9em"} color={"#808080"}>

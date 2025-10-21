@@ -24,7 +24,7 @@ const Timeline = ({ items }) => {
             align="center"
             justify="center"
             position="absolute"
-            left="-2.6rem"
+            left="-2.67rem"
             top="1.25rem"
             gap={10}
             boxSize="45px"

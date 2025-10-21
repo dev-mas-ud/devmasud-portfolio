@@ -57,7 +57,7 @@ export default function Hero() {
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          Hi 👋, I'm Masud — Your Front-End Developer ✨
+          Hi, I'm Masud — Your Front-End Developer ✨
         </Heading>
 
         <Text

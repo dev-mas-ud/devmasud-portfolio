@@ -33,8 +33,8 @@ export default function TechStack() {
 
         <Box overflow="hidden" as="marquee" width="100%" py={5}>
           <Flex as="div" align="center" gap={12} whiteSpace={"nowrap"}>
-            {[...techs, ...techs].map((tech, idx) => (
-              <Box key={idx} minW="70px">
+            {[...techs, ...techs, ...techs].map((tech, index) => (
+              <Box key={`stack-${index}`} minW="70px">
                 <Image
                   src={tech.src}
                   alt={tech.name}

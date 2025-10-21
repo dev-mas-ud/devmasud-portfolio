@@ -5,7 +5,7 @@ import Timeline from "@/components/Timeline";
 
 const experience = [
   {
-    role: "Frontend Developer | Contract",
+    role: "Front-End Developer | Contract",
     company: "TechNova Solutions",
     date: "Jan 2024 - Apr 2024",
     logo: "/images/technova.png",
@@ -33,7 +33,7 @@ const experience = [
     skills: ["HTML", "CSS", "JavaScript", "Git"],
   },
   {
-    role: "Frontend Developer | Remote",
+    role: "Front-End Developer | Remote",
     company: "Freelance",
     date: "Sep 2024 - Present",
     logo: "/images/freelance.jpg",

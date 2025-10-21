@@ -55,12 +55,12 @@ export default function NavHeader() {
 export function NavLinks() {
   const { isOpen, onClose } = useDisclosure();
 
-  const Links = ["Home", "About Me", "My Work", "Resumé", "Contact"];
+  const Links = ["Home", "About Me", "My Work", "Contact"];
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
     "My Work": "/#my-work",
-    Resumé: "/#resumé",
+    // Resumé: "/#resumé",
     Contact: "/#contact",
   };
 

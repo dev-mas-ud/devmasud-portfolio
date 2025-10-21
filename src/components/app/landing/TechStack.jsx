@@ -10,8 +10,8 @@ const techs = [
   { name: "HTML", src: "/images/html.svg" },
   { name: "CSS", src: "/images/css.svg" },
   { name: "Tailwind CSS", src: "/images/tailwind.svg" },
-  { name: "Vercel", src: "/images/vercel.svg" },
-  { name: "Git", src: "/images/git.svg" },
+  // { name: "Vercel", src: "/images/vercel.svg" },
+  // { name: "Git", src: "/images/git.svg" },
 ];
 
 export default function TechStack() {

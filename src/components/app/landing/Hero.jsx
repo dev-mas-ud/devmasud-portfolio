@@ -64,11 +64,11 @@ export default function Hero() {
           fontSize={{ base: "md", md: "lg" }}
           color="gray.300"
           lineHeight="1.7"
-          w={{ base: "full", md: "60vw" }}
+          w={{ base: "full", md: "60vw", lg: "40vw" }}
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          Coding. Testing. Deploying. Repeating
+          I turn Figma designs into pixel-perfect, high-performance React apps.
         </Text>
 
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>

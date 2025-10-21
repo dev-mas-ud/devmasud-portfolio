@@ -3,14 +3,14 @@ import { DefaultSeo } from "next-seo";
 export default function GlobalMetaTags() {
   return (
     <DefaultSeo
-      defaultTitle="Masud - Front-End Web Developer | React, Next.js, Javascript & Tailwind Css"
-      description="I build fast, scalable, and visually engaging web webistes for startups, businesses, and personal projects worldwide. Specializing in React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web solutions that perform and grow your brand."
+      defaultTitle="Masud — Front-End Developer | Figma to React & Next.js Expert"
+      description="I turn Figma designs into pixel-perfect, fast, and scalable React/Next.js applications. Focused on crafting modern, high-performance web experiences that look as good as they perform."
       canonical="https://bytedesign.com.ng/"
       additionalMetaTags={[
         {
           name: "keywords",
           content:
-            "Front-End developer, React developer, Next.js developer, TypeScript developer, JavaScript developer, web development, modern web apps, SaaS web apps, portfolio web developer, scalable web solutions",
+            "Figma to React developer, Front-End developer, Next.js developer, React developer, TypeScript developer, Tailwind CSS, JavaScript developer, UI developer, responsive web design, modern web development, pixel-perfect websites, frontend engineer",
         },
         {
           name: "charset",
@@ -50,26 +50,25 @@ export default function GlobalMetaTags() {
       openGraph={{
         type: "website",
         url: "https://bytedesign.com.ng/",
-        title:
-          "Masud - Front-End Web Developer | React, Next.js, JavaScript & Tailwind CSS",
+        title: "Masud — Front-End Developer | Figma to React & Next.js Expert",
         description:
-          "I design and develop fast, scalable, and modern web websites for clients and startups worldwide. From portfolios to custom SaaS platforms — I deliver solutions that perform and grow your brand.",
+          "I specialize in converting Figma designs into pixel-perfect, high-performance React/Next.js applications. Clean, scalable, and built for modern web standards.",
         locale: "en_US",
         images: [
           {
             url: "https://bytedesign.com.ng/images/og-banner.png",
             width: 1200,
             height: 630,
-            alt: "Masud - Front-End Web Developer",
+            alt: "Masud — Figma to React Front-End Developer",
           },
           {
             url: "https://bytedesign.com.ng/images/og-banner.png",
             width: 2400,
             height: 1260,
-            alt: "Masud - Front-End Web Developer",
+            alt: "Masud — Figma to React Front-End Developer",
           },
         ],
-        site_name: "Masud - Front-End Web Developer",
+        site_name: "Masud — Front-End Developer",
       }}
     />
   );

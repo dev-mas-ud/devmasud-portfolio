@@ -61,11 +61,11 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:creator" content="@DevMasud" />
         <meta
           name="twitter:title"
-          content="Masud - Front-End Web Developer | React, Next.js, Javascript & Tailwind Css"
+          content="Masud — Front-End Developer | Figma to React & Next.js Expert"
         />
         <meta
           name="twitter:description"
-          content="I build fast, scalable, and visually engaging web webistes for startups, businesses, and personal projects worldwide. Specializing in React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web solutions that perform and grow your brand."
+          content="I specialize in converting Figma designs into pixel-perfect, high-performance React/Next.js applications. Clean, scalable, and built for modern web standards."
         />
         <meta
           name="twitter:image"
@@ -115,7 +115,6 @@ export default function MyApp({ Component, pageProps }) {
               sameAs: [
                 "https://twitter.com/devmasud",
                 "https://web.facebook.com/profile.php?id=61581299132973",
-                "https://www.instagram.com/dev__masud",
                 "https://www.linkedin.com/in/dev-masud",
                 "https://github.com/dev-mas-ud",
               ],

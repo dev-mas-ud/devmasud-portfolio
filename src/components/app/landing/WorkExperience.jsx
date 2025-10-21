@@ -20,7 +20,7 @@ const experience = [
     date: "May 2024 - Aug 2024",
     logo: "/images/nnpc.png",
     description:
-      "Developed and maintained responsive front-end interfaces using React and TailwindCSS, improving user experience and performance across multiple web projects.",
+      "Developed and maintained responsive front-end interfaces using React and TailwindCSS, improving user experience and performance across multiple projects.",
     skills: ["React", "HTML", "JavaScript", "TailwindCSS"],
   },
   {
@@ -79,7 +79,7 @@ export default function WorkExperience() {
             </Box>
           </Stack>
           <Text fontSize="1.12em" lineHeight={1.9} mb={10} color="gray.300">
-            Every project taught me something new — about code, design, and the
+            Every project taught me something new about code, design, and the
             people behind great products. This journey is a reflection of
             continuous learning and progress.
           </Text>

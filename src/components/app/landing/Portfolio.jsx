@@ -31,19 +31,19 @@ export default function Portfolio() {
     },
     {
       description:
-        "A modern, responsive real estate landing page designed to showcase properties with clean visuals and an intuitive user experience.",
-      href: "https://lumina-estate.vercel.app/",
-      repo: "https://github.com/dev-mas-ud/lumina-estate",
-      imgUrl: "/images/lumina-screenshot.webp",
-      stack: ["Next.js", "Tailwind CSS", "Chakra UI"],
-    },
-    {
-      description:
         "A sleek SaaS landing page showcasing an AI-powered platform with modern design, clear messaging, and engaging visuals.",
       href: "https://convertly-nu.vercel.app/",
       repo: "https://github.com/dev-mas-ud/convertly",
       imgUrl: "/images/convertly.webp",
       stack: ["React", "Radix UI", "Tailwind CSS", "Framer Motion"],
+    },
+    {
+      description:
+        "A modern, responsive real estate landing page designed to showcase properties with clean visuals and an intuitive user experience.",
+      href: "https://lumina-estate.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/lumina-estate",
+      imgUrl: "/images/lumina-screenshot.webp",
+      stack: ["Next.js", "Tailwind CSS", "Chakra UI"],
     },
     {
       description:

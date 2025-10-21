@@ -52,6 +52,7 @@ const ScrollToTopButton = () => {
           rounded="full"
           size="lg"
           bg="primary"
+          color="neutralDark"
           style={{
             transform: isClicked ? "scale(1.2)" : "scale(1)",
             transition: "transform 0.3s ease",

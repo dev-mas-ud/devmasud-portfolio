@@ -17,19 +17,19 @@ export default function AboutMe() {
 
   const SOCIAL_ICONS = [
     {
-      icon: <TwitterX size={20} color="#000000" />,
+      icon: <TwitterX size={20} color="neutralDark" />,
       href: "https://x.com/DevMasud",
       label: "Follow me on X",
       title: "@DevMasud",
     },
     {
-      icon: <Linkedin size={20} color="#000000" />,
+      icon: <Linkedin size={20} color="neutralDark" />,
       href: "https://www.linkedin.com/in/dev-masud/",
       label: "Follow me on LinkedIn",
       title: "dev-masud",
     },
     {
-      icon: <Github size={20} color="#000000" />,
+      icon: <Github size={20} color="neutralDark" />,
       href: "https://github.com/dev-mas-ud/",
       label: "Follow me on Github",
       title: "dev-mas-ud",
@@ -69,7 +69,7 @@ export default function AboutMe() {
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a creative front-end developer. I care about
-            building web experiences that actually move the needle — products
+            building web experiences that actually move the needle, products
             that are fast, intuitive, and built to scale. I combine technical
             precision with design thinking to deliver solutions that look as
             good as they perform.
@@ -95,8 +95,8 @@ export default function AboutMe() {
             ,{" "}
             <Span fontWeight={"semibold"} color="neutralDark">
               Tailwind CSS
-            </Span>{" "}
-            — allowing me to handle frontend experiences seamlessly. Whether
+            </Span>
+            , allowing me to handle frontend experiences seamlessly. Whether
             it's a startup MVP or a full business platform, I focus on
             delivering clean, efficient, and impactful solutions.
           </Text>
@@ -138,7 +138,7 @@ export default function AboutMe() {
         <Box
           bgGradient="to-r"
           gradientFrom="#08CB00"
-          gradientTo="#000000"
+          gradientTo="neutralDark"
           p={2}
           overflow={"hidden"}
           w={{ base: "100%", md: "30%" }}

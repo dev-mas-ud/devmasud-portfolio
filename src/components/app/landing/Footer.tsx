@@ -2,7 +2,7 @@ import { Flex, HStack, Link } from "@chakra-ui/react";
 import { Github, Linkedin, TwitterX } from "react-bootstrap-icons";
 
 export default function Footer() {
-  const SOCIAL_ICONS = [
+  const SOCIAL_ICONS: any[] = [
     {
       icon: <TwitterX size={20} color="#ccc" />,
       href: "https://x.com/DevMasud",

@@ -6,7 +6,8 @@ import { useRef } from "react";
 import { PersonWorkspace } from "react-bootstrap-icons";
 
 export default function Hero() {
-  const textRef = useRef(null);
+  const textRef: any = useRef(null);
+
   useTextSplit(textRef);
 
   return (

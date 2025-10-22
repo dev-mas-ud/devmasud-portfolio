@@ -3,39 +3,56 @@ import { useState } from "react";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { usePathname, useRouter } from "next/navigation";
 
-const NavLink = ({ children, href, color, target, isOpen }) => {
+interface Types {
+  children: any;
+  href: string;
+  color: string;
+  target?: string;
+  rel?: string;
+  isOpen?: boolean;
+}
+
+const NavLink = ({
+  children,
+  href,
+  color,
+  target,
+  rel,
+  isOpen,
+}: Types): any => {
   const pathname = usePathname();
   const [isNavigating, setIsNavigating] = useState(false);
   const router = useRouter();
 
-  const isHashLink = href.includes("#");
-  const isRootLink = href === "/";
-  const basePath = isHashLink ? href.split("#")[0] : href;
-  const isActive = pathname === basePath && !isHashLink;
+  const isHashLink: boolean = href.includes("#");
+  const isRootLink: boolean = href === "/";
+  const basePath: string = isHashLink ? href.split("#")[0] : href;
+  const isActive: boolean = pathname === basePath && !isHashLink;
 
-  const defaultColor = color || "primary";
-  const hoverColor = "primary/50";
-  const activeColor = "baseLight";
+  const defaultColor: string = color || "primary";
+  const hoverColor: string = "primary/50";
+  const activeColor: string = "baseLight";
 
-  const updateUrl = (url) => {
+  const updateUrl = (url: string): void => {
     window.history.pushState({}, "", url);
   };
 
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     updateUrl("/");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const scrollToHash = (hash) => {
+  const scrollToHash = (hash: any) => {
     updateUrl(hash);
-    const element = document.getElementById(hash.substring(1));
+    const element: Element = document.getElementById(hash.substring(1));
     if (element) {
-      const offset = element.getBoundingClientRect().top + window.scrollY - 80;
+      const offset: number =
+        element.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
 
-  const handleLinkClick = async (e) => {
+  const handleLinkClick = async (e: any) => {
     if (isNavigating) {
       e.preventDefault();
       return;
@@ -60,7 +77,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
       router.push(basePath);
 
       setTimeout(() => {
-        const [, hash] = href.split("#");
+        const [, hash]: any[] = href.split("#");
         scrollToHash(`#${hash}`);
         setIsNavigating(false);
       }, 100);
@@ -72,6 +89,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
       <ChakraLink
         as="span"
         py={2}
+        rel={rel}
         fontWeight="semibold"
         fontSize={"1.1em"}
         transition="color 0.15s ease-in-out"

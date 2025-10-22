@@ -1,13 +1,16 @@
 import { Box, Stack } from "@chakra-ui/react";
 import NavLink from "./NavLink";
-import { Button } from "@/components/Button";
-import { Github } from "react-bootstrap-icons";
 
-const MobileMenu = ({ Links, linkUrls }) => {
+interface Types {
+  Links: any[];
+  linkUrls: any;
+}
+
+const MobileMenu = ({ Links, linkUrls }: Types) => {
   return (
     <Box pb={4} id="mobile-links">
       <Stack as="nav" gap={2} align={"flex-start"}>
-        {Links.map((link) => (
+        {Links.map((link: any): any => (
           <NavLink
             color="neutralDark"
             key={link}

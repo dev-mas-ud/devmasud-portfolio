@@ -15,7 +15,15 @@ import {
 export default function AboutMe() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const SOCIAL_ICONS = [
+  const STACK: string[] = [
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+  ];
+
+  const SOCIAL_ICONS: any[] = [
     {
       icon: <TwitterX size={20} color="neutralDark" />,
       href: "https://x.com/DevMasud",
@@ -36,13 +44,13 @@ export default function AboutMe() {
     },
   ];
 
-  const handleTouchStart = useCallback((e) => {
-    const target = e.currentTarget;
+  const handleTouchStart = useCallback((e: any): void => {
+    const target: Element = e.currentTarget;
     target.classList.add("translate-y");
   }, []);
 
-  const handleTouchEnd = useCallback((e) => {
-    const target = e.currentTarget;
+  const handleTouchEnd = useCallback((e: any): void => {
+    const target: Element = e.currentTarget;
     target.classList.remove("translate-y");
   }, []);
 
@@ -65,7 +73,7 @@ export default function AboutMe() {
         gap={{ base: 16, md: 12 }}
       >
         <Box flex="1" zIndex={2} px={{ base: 2, md: 0 }}>
-          <HeadingMarker text="WHO AM I" />
+          <HeadingMarker text="Who I Am" />
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a creative front-end developer who turns Figma
@@ -77,28 +85,19 @@ export default function AboutMe() {
 
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             My core stack includes{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              React
-            </Span>
-            ,{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              Next.js
-            </Span>
-            ,{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              JavaScript
-            </Span>
-            ,{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              TypeScript
-            </Span>
-            ,{" "}
-            <Span fontWeight={"semibold"} color="neutralDark">
-              Tailwind CSS
-            </Span>
-            , allowing me to handle frontend experiences seamlessly. Whether
-            it's a startup MVP or a full business platform, I focus on
-            delivering clean, efficient, and impactful solutions.
+            {STACK.map((stack: string, index: number): any => (
+              <Span
+                key={`stack-${index}`}
+                fontWeight={"semibold"}
+                color="neutralDark"
+              >
+                {stack}
+                {", "}
+              </Span>
+            ))}
+            allowing me to handle frontend experiences seamlessly. Whether it's
+            a startup MVP or a full business platform, I focus on delivering
+            clean, efficient, and impactful solutions.
           </Text>
           <HStack
             id="about-btns-wrapper"

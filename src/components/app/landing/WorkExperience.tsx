@@ -3,7 +3,7 @@ import H2Heading from "./H2Heading";
 import HeadingMarker from "./HeadingMarker";
 import Timeline from "@/components/Timeline";
 
-const experience = [
+const experience: any[] = [
   {
     role: "Front-End Developer | Contract",
     company: "TechNova Solutions",

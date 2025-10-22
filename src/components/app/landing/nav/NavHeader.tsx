@@ -53,21 +53,20 @@ export default function NavHeader() {
 }
 
 export function NavLinks() {
-  const { isOpen, onClose } = useDisclosure();
+  const { isOpen, onClose }: any = useDisclosure();
 
-  const Links = ["Home", "About Me", "My Work", "Contact"];
+  const Links: string[] = ["Home", "About Me", "My Work", "Contact"];
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
     "My Work": "/#my-work",
-    // Resumé: "/#resumé",
     Contact: "/#contact",
   };
 
   return (
     <Box>
       <DesktopLinks Links={Links} linkUrls={linkUrls} />
-      <Drawer.Root isOpen={isOpen} placement="top" onClose={onClose}>
+      <Drawer.Root open={isOpen} placement="top">
         <Drawer.Trigger id="menu-trigger" asChild display={"flex"}>
           <IconButton
             size="sm"

@@ -44,13 +44,13 @@ export default function AboutMe() {
     },
   ];
 
-  const handleTouchStart = useCallback((e: any): void => {
-    const target: Element = e.currentTarget;
+  const handleTouchStart = useCallback((e: any) => {
+    const target: any = e.currentTarget;
     target.classList.add("translate-y");
   }, []);
 
-  const handleTouchEnd = useCallback((e: any): void => {
-    const target: Element = e.currentTarget;
+  const handleTouchEnd = useCallback((e: any) => {
+    const target: any = e.currentTarget;
     target.classList.remove("translate-y");
   }, []);
 
@@ -85,7 +85,7 @@ export default function AboutMe() {
 
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             My core stack includes{" "}
-            {STACK.map((stack: string, index: number): any => (
+            {STACK.map((stack: string, index: number) => (
               <Span
                 key={`stack-${index}`}
                 fontWeight={"semibold"}

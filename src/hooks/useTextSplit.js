@@ -20,7 +20,7 @@ const useTextSplit = (elementRef) => {
   useEffect(() => {
     if (inView && elementRef.current) {
       requestAnimationFrame(() => {
-        // ✅ Split immediately (don’t wait for fonts)
+        // Split immediately (don’t wait for fonts)
         splitInstanceRef.current = new SplitType(elementRef.current, {
           types: "words, chars",
           wordClass: "split-word",
@@ -28,7 +28,7 @@ const useTextSplit = (elementRef) => {
           lineClass: "split-line",
         });
 
-        // ✅ Animate only opacity/transform
+        // Animate only opacity/transform
         gsap.set(splitInstanceRef.current.chars, {
           opacity: 0,
           x: -50,
@@ -49,7 +49,7 @@ const useTextSplit = (elementRef) => {
         };
       });
     }
-  }, [inView]);
+  }, [inView, elementRef]);
 
   return null;
 };

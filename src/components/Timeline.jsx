@@ -4,7 +4,7 @@ const Timeline = ({ items }) => {
   return (
     <VStack
       align="start"
-      gap={6}
+      gap={2}
       position="relative"
       pl={6}
       _before={{

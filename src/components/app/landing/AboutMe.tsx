@@ -76,11 +76,10 @@ export default function AboutMe() {
           <HeadingMarker text="Who I Am" />
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
-            Hi, I'm Masud — a creative front-end developer who turns Figma
-            designs into pixel-perfect, high-performance web experiences. I care
-            about building products that are fast, intuitive, and scalable. By
-            combining technical precision with design thinking, I deliver
-            solutions that look as good as they perform.
+            Hi, I'm Masud — a front-end developer focused on building fast,
+            intuitive, and scalable web experiences. I combine technical
+            precision with design thinking to craft clean, high-performance
+            interfaces that look great and perform flawlessly across devices.
           </Text>
 
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">

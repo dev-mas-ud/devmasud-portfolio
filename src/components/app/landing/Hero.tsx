@@ -51,14 +51,14 @@ export default function Hero() {
           as="h1"
           w="full"
           mt={{ base: 4, md: 0 }}
-          fontSize={{ base: "3.3em", md: "4.3em" }}
+          fontSize={{ base: "3.5em", md: "3.7em" }}
           fontWeight={600}
           color="baseLight"
           lineHeight="1.3"
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          Hi, I'm Masud — Your Front-End Developer ✨
+          Hi, I'm Masud — Front-End Developer for Modern Brands ✨
         </Heading>
 
         <Text
@@ -69,7 +69,8 @@ export default function Hero() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          I turn Figma designs into pixel-perfect, high-performance React apps.
+          I create custom, high-performance web interfaces that elevate user
+          experience and drive results.
         </Text>
 
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>

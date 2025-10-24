@@ -59,7 +59,7 @@ export function NavLinks() {
   const linkUrls = {
     Home: "/",
     "About Me": "/#about-me",
-    "My Work": "/#my-work",
+    "My Work": "/#projects",
     Contact: "/#contact",
   };
 

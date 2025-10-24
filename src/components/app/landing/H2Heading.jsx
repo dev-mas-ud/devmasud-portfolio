@@ -3,7 +3,7 @@ import useTextSplit from "hooks/useTextSplit";
 import { useRef } from "react";
 
 export default function H2Heading({
-  fontSize = { base: "2.5em", md: "3em" },
+  fontSize = { base: "2.3em", md: "2.5em" },
   fontWeight = "600",
   children,
   ...props

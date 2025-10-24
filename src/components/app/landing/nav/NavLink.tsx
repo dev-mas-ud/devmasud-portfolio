@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { useState } from "react";
 import { Link as ChakraLink } from "@chakra-ui/react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface Types {
   children: any;
@@ -21,11 +20,7 @@ const NavLink = ({
   isOpen,
 }: Types): any => {
   const pathname = usePathname();
-  const [isNavigating, setIsNavigating] = useState(false);
-  const router = useRouter();
-
   const isHashLink: boolean = href.includes("#");
-  const isRootLink: boolean = href === "/";
   const basePath: string = isHashLink ? href.split("#")[0] : href;
   const isActive: boolean = pathname === basePath && !isHashLink;
 
@@ -33,59 +28,8 @@ const NavLink = ({
   const hoverColor: string = "primary/50";
   const activeColor: string = "baseLight";
 
-  const updateUrl = (url: string): void => {
-    window.history.pushState({}, "", url);
-  };
-
-  const scrollToTop = (): void => {
-    updateUrl("/");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const scrollToHash = (hash: any) => {
-    updateUrl(hash);
-    const element: Element = document.getElementById(hash.substring(1));
-    if (element) {
-      const offset: number =
-        element.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top: offset, behavior: "smooth" });
-    }
-  };
-
-  const handleLinkClick = async (e: any) => {
-    if (isNavigating) {
-      e.preventDefault();
-      return;
-    }
-
-    if (isRootLink && pathname === "/") {
-      e.preventDefault();
-      scrollToTop();
-      return;
-    }
-
-    if (isHashLink && pathname === "/") {
-      e.preventDefault();
-      const [, hash] = href.split("#");
-      scrollToHash(`#${hash}`);
-      return;
-    }
-
-    if (isHashLink && pathname !== basePath) {
-      e.preventDefault();
-      setIsNavigating(true);
-      router.push(basePath);
-
-      setTimeout(() => {
-        const [, hash]: any[] = href.split("#");
-        scrollToHash(`#${hash}`);
-        setIsNavigating(false);
-      }, 100);
-    }
-  };
-
   return (
-    <Link href={href} target={target} scroll={false} onClick={handleLinkClick}>
+    <Link href={href} target={target}>
       <ChakraLink
         as="span"
         py={2}

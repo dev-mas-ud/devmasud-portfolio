@@ -3,8 +3,8 @@ import { DefaultSeo } from "next-seo";
 export default function GlobalMetaTags() {
   return (
     <DefaultSeo
-      defaultTitle="Masud — Front-End Developer | Figma to React & Next.js Expert"
-      description="I turn Figma designs into pixel-perfect, fast, and scalable React/Next.js applications. Focused on crafting modern, high-performance web experiences that look as good as they perform."
+      defaultTitle="Masud — Front-End Developer | Figma to React Expert"
+      description="I turn Figma designs into pixel-perfect, fast, and scalable React web applications. Focused on crafting modern, high-performance web experiences that look as good as they perform."
       canonical="https://bytedesign.com.ng/"
       additionalMetaTags={[
         {
@@ -50,9 +50,9 @@ export default function GlobalMetaTags() {
       openGraph={{
         type: "website",
         url: "https://bytedesign.com.ng/",
-        title: "Masud — Front-End Developer | Figma to React & Next.js Expert",
+        title: "Masud — Front-End Developer | Figma to React Expert",
         description:
-          "I specialize in converting Figma designs into pixel-perfect, high-performance React/Next.js applications. Clean, scalable, and built for modern web standards.",
+          "I specialize in converting Figma designs into pixel-perfect, high-performance React web applications. Clean, scalable, and built for modern web standards.",
         locale: "en_US",
         images: [
           {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { SlideIn } from "@/components/Animations";
 import { Toaster, toaster } from "@/components/ui/toaster";
 import { ButtonLoader } from "@/components/Loader";
-import { Send } from "react-bootstrap-icons";
+import { SendFill } from "react-bootstrap-icons";
 
 export default function ContackForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -143,7 +143,7 @@ export default function ContackForm() {
               </>
             ) : (
               <>
-                <Send /> Send Message
+                <SendFill /> Send Message
               </>
             )}
           </Button>

@@ -12,7 +12,7 @@ import {
 
 import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
-import { ArrowUpRightSquare, Github } from "react-bootstrap-icons";
+import { ArrowUpRightSquareFill, Github } from "react-bootstrap-icons";
 import HeadingMarker from "./HeadingMarker";
 import { useState } from "react";
 import Image from "next/image";
@@ -23,19 +23,19 @@ export default function Portfolio() {
   const PROJECTS = [
     {
       description:
-        "A clean, responsive business landing page combining modern UI design with intuitive UX to engage visitors and drive conversions.",
-      href: "https://uxpert-theta.vercel.app/",
-      repo: "https://github.com/dev-mas-ud/uxpert",
-      imgUrl: "/images/uxpert.webp",
-      stack: ["React", "Tailwind CSS"],
-    },
-    {
-      description:
         "A sleek SaaS landing page showcasing an AI-powered platform with modern design, clear messaging, and engaging visuals.",
       href: "https://convertly-nu.vercel.app/",
       repo: "https://github.com/dev-mas-ud/convertly",
       imgUrl: "/images/convertly.webp",
       stack: ["React", "Radix UI", "Tailwind CSS", "Framer Motion"],
+    },
+    {
+      description:
+        "A clean, responsive business landing page combining modern UI design with intuitive UX to engage visitors and drive conversions.",
+      href: "https://uxpert-theta.vercel.app/",
+      repo: "https://github.com/dev-mas-ud/uxpert",
+      imgUrl: "/images/uxpert.webp",
+      stack: ["React", "Tailwind CSS"],
     },
     {
       description:
@@ -164,7 +164,7 @@ export default function Portfolio() {
                       }}
                       size="sm"
                     >
-                      <ArrowUpRightSquare /> Live Demo
+                      <ArrowUpRightSquareFill /> Live Demo
                     </Button>
                     <Button
                       as="a"

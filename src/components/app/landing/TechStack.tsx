@@ -41,7 +41,7 @@ export default function TechStack() {
           <Marquee
             pauseOnHover
             gradient
-            gradientWidth={useBreakpointValue({ base: 100, md: 200 })}
+            gradientWidth={useBreakpointValue({ base: 70, md: 100 })}
           >
             <Flex as="div" align="center" gap={12} whiteSpace={"nowrap"}>
               {[...techs, ...techs, ...techs].map((tech, index) => (

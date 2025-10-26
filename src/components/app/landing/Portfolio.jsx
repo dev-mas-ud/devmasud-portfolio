@@ -58,7 +58,7 @@ export default function Portfolio() {
   return (
     <Box
       id="projects"
-      px={{ base: 6, md: 10 }}
+      px={{ base: 6, md: 16 }}
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
       bg="neutralDark"
@@ -69,7 +69,7 @@ export default function Portfolio() {
           <H2Heading color="baseLight">My Recent Projects</H2Heading>
         </Box>
       </Stack>
-      <SimpleGrid columns={[1, 2, 2, 4]} gap={8}>
+      <SimpleGrid columns={[1, 2, 2]} gap={10}>
         {PROJECTS.map(({ description, imgUrl, href, repo, stack }, index) => (
           <SlideIn
             key={`project-${index}`}
@@ -95,8 +95,8 @@ export default function Portfolio() {
                   position="relative"
                   overflow="hidden"
                   width="full"
-                  maxH="200px"
-                  minHeight="200px"
+                  maxH="250px"
+                  minHeight="250px"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                   onTouchStart={() => setHoveredIndex(index)}
@@ -164,7 +164,7 @@ export default function Portfolio() {
                       }}
                       size="sm"
                     >
-                      <ArrowUpRightSquareFill /> Live Demo
+                      <ArrowUpRightSquareFill /> Preview
                     </Button>
                     <Button
                       as="a"

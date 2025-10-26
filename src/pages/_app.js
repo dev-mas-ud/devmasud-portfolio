@@ -61,11 +61,12 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:creator" content="@DevMasud" />
         <meta
           name="twitter:title"
-          content="Masud — Front-End Developer | Figma to React Expert"
+          content="Masud — Front-End Developer | React Expert"
         />
         <meta
           name="twitter:description"
-          content="I specialize in converting Figma designs into pixel-perfect, high-performance React web applications. Clean, scalable, and built for modern web standards."
+          content="I build fast, accessible, and SEO-friendly web applications using
+          React, Next.js, Tailwind, and Shadcn UI."
         />
         <meta
           name="twitter:image"

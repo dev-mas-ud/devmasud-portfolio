@@ -60,7 +60,7 @@ export default function WorkExperience() {
       bg="neutralDark"
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
-      px={{ base: 5, md: 12 }}
+      px={{ base: 5, md: 16 }}
     >
       <Flex
         flexDirection={{ base: "column", md: "row" }}

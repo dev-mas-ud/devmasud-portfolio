@@ -58,7 +58,7 @@ export default function Hero() {
           textAlign="center"
           minH={{ base: "auto", md: "calc(2em * 1.3)" }}
         >
-          Hi, I'm Masud — Front-End Developer for Modern Brands ✨
+          Hi, I'm Masud — Front-end Developer for Modern Brands ✨
         </Heading>
 
         <Text
@@ -69,8 +69,8 @@ export default function Hero() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          I create custom, high-performance web interfaces that elevate user
-          experience and drive results.
+          I build fast, accessible, and SEO-friendly web applications using
+          React, Next.js, Tailwind, and Shadcn UI.
         </Text>
 
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>

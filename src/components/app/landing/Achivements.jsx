@@ -102,7 +102,7 @@ export default function Achievements() {
         <SimpleGrid
           columns={{ base: 2, md: 2 }}
           w={{ base: "full", md: "50%" }}
-          gap={{ base: 8, md: 10 }}
+          gap={8}
         >
           {stats.map((stat, index) => (
             <Box

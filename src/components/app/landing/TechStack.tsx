@@ -15,9 +15,13 @@ const techs: any[] = [
   { name: "Next.js", src: "/images/next.svg" },
   { name: "JavaScript", src: "/images/javascript.svg" },
   { name: "TypeScript", src: "/images/typescript.svg" },
+  { name: "Tailwind CSS", src: "/images/tailwind.svg" },
+  { name: "Node", src: "/images/nodejs.svg" },
+  { name: "MongoDB", src: "/images/mongodb.svg" },
+  { name: "MySQL", src: "/images/mysql.svg" },
+  { name: "Python", src: "/images/python.svg" },
   { name: "HTML", src: "/images/html.svg" },
   { name: "CSS", src: "/images/css.svg" },
-  { name: "Tailwind CSS", src: "/images/tailwind.svg" },
 ];
 
 export default function TechStack() {
@@ -40,11 +44,10 @@ export default function TechStack() {
         <Box overflow="hidden" width="100%" py={5}>
           <Marquee
             pauseOnHover
-            gradient
             gradientWidth={useBreakpointValue({ base: 70, md: 100 })}
           >
             <Flex as="div" align="center" gap={12} whiteSpace={"nowrap"}>
-              {[...techs, ...techs, ...techs].map((tech, index) => (
+              {[...techs].map((tech, index) => (
                 <Box key={`stack-${index}`} minW="70px">
                   <Image
                     src={tech.src}

@@ -15,13 +15,7 @@ import {
 export default function AboutMe() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const STACK: string[] = [
-    "React",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "Tailwind CSS",
-  ];
+  const STACK: string[] = ["React", "Next.js", "TypeScript", "Tailwind CSS"];
 
   const SOCIAL_ICONS: any[] = [
     {
@@ -77,7 +71,7 @@ export default function AboutMe() {
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a front-end developer focused on building fast,
-            intuitive, and scalable web experiences. I combine technical
+            intuitive, and scalable web applications. I combine technical
             precision with design thinking to craft clean, high-performance
             interfaces that look great and perform flawlessly across devices.
           </Text>
@@ -85,18 +79,16 @@ export default function AboutMe() {
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             My core stack includes{" "}
             {STACK.map((stack: string, index: number) => (
-              <Span
-                key={`stack-${index}`}
-                fontWeight={"semibold"}
-                color="neutralDark"
-              >
+              <Span key={`stack-${index}`} color="neutralDark">
                 {stack}
                 {", "}
               </Span>
             ))}
-            allowing me to handle frontend experiences seamlessly. Whether it's
-            a startup MVP or a full business platform, I focus on delivering
-            clean, efficient, and impactful solutions.
+            allowing me to handle front-end experiences seamlessly. In addition
+            to my front-end expertise, I also have solid full-stack skills in
+            Node.js, Express, Python, and databases such as MongoDB and MySQL.
+            This enables me to manage projects end-to-end — from designing
+            smooth UI to connecting secure backends.
           </Text>
           <HStack
             id="about-btns-wrapper"
@@ -154,7 +146,7 @@ export default function AboutMe() {
             position="relative"
             rounded="xl"
             overflow="hidden"
-            h={{ base: "500px", md: "350px" }}
+            h={{ base: "500px", md: "400px" }}
           >
             <Image
               src="/images/me.webp"

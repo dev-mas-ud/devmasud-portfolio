@@ -14,6 +14,7 @@ export default function CTASection() {
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
       px={{ base: 6, md: 10 }}
+      style={{ scrollMarginTop: "50px" }}
     >
       <Box
         display="flex"

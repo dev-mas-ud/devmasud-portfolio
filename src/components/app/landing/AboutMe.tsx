@@ -58,6 +58,7 @@ export default function AboutMe() {
       px={{ base: 6, md: 12 }}
       position="relative"
       overflow="hidden"
+      style={{ scrollMarginTop: "50px" }}
     >
       <Flex
         direction={{ base: "column", md: "row" }}
@@ -71,9 +72,9 @@ export default function AboutMe() {
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a front-end developer focused on building fast,
-            intuitive, and scalable web applications. I combine technical
-            precision with design thinking to craft clean, high-performance
-            interfaces that look great and perform flawlessly across devices.
+            intuitive, and scalable web apps. I combine technical precision with
+            design thinking to craft clean, high-performance interfaces that
+            look great and perform flawlessly across devices.
           </Text>
 
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
@@ -85,7 +86,7 @@ export default function AboutMe() {
               </Span>
             ))}
             allowing me to handle front-end experiences seamlessly. In addition
-            to my front-end expertise, I also have solid full-stack skills in
+            to my front-end expertise, I also have solid back-end skills in
             Node.js, Express, Python, and databases such as MongoDB and MySQL.
             This enables me to manage projects end-to-end — from designing
             smooth UI to connecting secure backends.

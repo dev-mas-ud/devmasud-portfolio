@@ -14,12 +14,11 @@ export default function Hero() {
     <Box
       as="header"
       overflow={"hidden"}
-      height={"100vh"}
+      height={{ base: "115vh", md: "100vh" }}
       width={"full"}
       position="relative"
       mt={-24}
       px={{ base: 8, md: 16, xl: 20 }}
-      py={{ base: 14, md: 28 }}
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -69,8 +68,8 @@ export default function Hero() {
           textAlign={"center"}
           my={{ base: 1, md: 0 }}
         >
-          I build fast, accessible, and SEO-friendly web applications using
-          React, Next.js, Tailwind, and Shadcn UI.
+          I build fast, accessible, and SEO-friendly websites using React,
+          Next.js, Tailwind, and Shadcn UI.
         </Text>
 
         <HStack justify={"center"} w={"full"} mt={4} gap={{ base: 4, md: 6 }}>

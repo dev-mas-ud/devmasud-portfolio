@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { Provider } from "@/components/ui/provider";
-import { FullPageLoader } from "@/components/Loader";
-import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import { Analytics } from "@vercel/analytics/next";
 import GlobalMetaTags from "@/components/app/GlobalMetaTags";
 import Head from "next/head";
@@ -15,11 +13,6 @@ import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  useRouteChangeHandler(router, setLoading, setError);
-
   const pathname = router.pathname;
   const is404 = pageProps.notFound || pathname === "/404";
 
@@ -39,18 +32,9 @@ export default function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   const renderContent = () => {
-    if (loading) return <FullPageLoader />;
     if (!Component) return <h1>Page not found</h1>;
     return <Component {...pageProps} />;
   };
-
-  if (error) {
-    return (
-      <Provider>
-        <h1>{error}</h1>
-      </Provider>
-    );
-  }
 
   return (
     <Provider p={0} m={0}>

@@ -55,10 +55,10 @@ const Timeline = ({ items }) => {
             <Text fontWeight="bold" fontSize="lg" color="white">
               {item.role}
             </Text>
-            <Text fontSize="sm" color="gray.400" mb={2}>
+            <Text fontSize="sm" color="gray.300" mb={2}>
               {item.company} • {item.date}
             </Text>
-            <Text color="gray.300" fontSize="sm" mb={3}>
+            <Text color="gray.400" fontSize="sm" mb={3}>
               {item.description}
             </Text>
 
@@ -71,7 +71,8 @@ const Timeline = ({ items }) => {
                     px={3}
                     py={1}
                     color="white"
-                    borderRadius="md"
+                    fontSize={"sm"}
+                    borderRadius="full"
                   >
                     {skill}
                   </Span>

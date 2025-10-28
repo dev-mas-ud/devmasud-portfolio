@@ -147,7 +147,7 @@ export default function AboutMe() {
             position="relative"
             rounded="xl"
             overflow="hidden"
-            h={{ base: "500px", md: "400px" }}
+            h={"400px"}
           >
             <Image
               src="/images/me.webp"

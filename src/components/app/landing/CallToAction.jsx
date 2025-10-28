@@ -10,7 +10,7 @@ export default function CTASection() {
   return (
     <Box
       id="contact"
-      bg="primary"
+      bg="baseLight"
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
       px={{ base: 6, md: 10 }}

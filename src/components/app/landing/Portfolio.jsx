@@ -39,7 +39,7 @@ export default function Portfolio() {
       ],
     },
     {
-      title: " AI-powered SaaS Platform",
+      title: "AI-powered SaaS Platform",
       description:
         "A sleek and modern SaaS landing page showcasing an AI-powered platform designed to highlight innovation and performance. It features a clean layout, clear and compelling messaging, engaging visuals, and smooth animations that enhance user experience and drive conversions.",
       href: "https://convertly-nu.vercel.app/",
@@ -171,7 +171,6 @@ export default function Portfolio() {
                     pt={5}
                     pb={2}
                     px={1}
-                    minH={220}
                     justifyContent={"space-between"}
                   >
                     <Heading

@@ -18,8 +18,8 @@ export function Button({ children, ...props }) {
 
   return (
     <ChakraButton
-      bg={props.variant === "solid" ? "primary" : "transparent"}
-      color={props.variant === "solid" ? "neutralDark" : "baseLight"}
+      bg={props.variant === "solid" ? "neutralDark" : "transparent"}
+      color={props.variant === "solid" ? "primary" : "baseLight"}
       variant={props.variant || "solid"}
       data-type={props.variant || "solid"}
       transition={".4s"}

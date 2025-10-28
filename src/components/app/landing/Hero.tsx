@@ -14,11 +14,12 @@ export default function Hero() {
     <Box
       as="header"
       overflow={"hidden"}
-      height={{ base: "115vh", md: "100vh" }}
+      height={{ base: "100vh", md: "100vh" }}
       width={"full"}
       position="relative"
       mt={-24}
       px={{ base: 8, md: 16, xl: 20 }}
+      pt={{ base: 20, md: 0 }}
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -80,6 +81,8 @@ export default function Hero() {
             target="_blank"
             size={"xl"}
             variant="solid"
+            bg="primary"
+            color="neutralDark"
           >
             <PersonWorkspace /> Hire Me
           </Button>

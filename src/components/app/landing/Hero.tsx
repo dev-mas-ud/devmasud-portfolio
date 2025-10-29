@@ -14,7 +14,7 @@ export default function Hero() {
     <Box
       as="header"
       overflow={"hidden"}
-      height={{ base: "100vh", md: "100vh" }}
+      height={{ base: "110vh", md: "100vh" }}
       width={"full"}
       position="relative"
       mt={-24}

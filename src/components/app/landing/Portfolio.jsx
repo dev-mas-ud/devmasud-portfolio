@@ -137,7 +137,6 @@ export default function Portfolio() {
                     rounded="xl"
                     width="full"
                     maxH="270px"
-                    minHeight="270px"
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
                     onTouchStart={() => setHoveredIndex(index)}

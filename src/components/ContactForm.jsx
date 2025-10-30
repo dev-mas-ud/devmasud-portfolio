@@ -83,10 +83,8 @@ export default function ContackForm() {
     <>
       <SlideIn
         bg="baseLight"
-        p={8}
         rounded="3xl"
         ml={{ base: 0, md: 4 }}
-        mt={{ base: 8, md: 0 }}
         w={{ base: "100%", md: "60%", lg: "50%" }}
       >
         <Stack as="form" gap={4} onSubmit={handleSubmit}>

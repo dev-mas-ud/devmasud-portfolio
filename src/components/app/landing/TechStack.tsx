@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
 import H2Heading from "./H2Heading";
-import HeadingMarker from "./HeadingMarker";
 
 const techs: any[] = [
   { name: "React", src: "/images/react.svg" },
@@ -36,7 +35,6 @@ export default function TechStack() {
       <Container maxW="container.lg" p="0">
         <Stack align={"center"} px={3}>
           <Box>
-            <HeadingMarker text="technology" />
             <H2Heading color="baseLight">My Tech Stack</H2Heading>
           </Box>
         </Stack>

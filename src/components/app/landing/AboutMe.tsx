@@ -4,7 +4,6 @@ import H2Heading from "./H2Heading";
 import { Button } from "@/components/Button";
 import { SlideIn } from "@/components/Animations";
 import { useCallback, useState } from "react";
-import HeadingMarker from "./HeadingMarker";
 import {
   Github,
   Linkedin,
@@ -68,7 +67,6 @@ export default function AboutMe() {
         gap={{ base: 16, md: 12 }}
       >
         <Box flex="1" zIndex={2} px={{ base: 2, md: 0 }}>
-          <HeadingMarker text="Who I Am" />
           <H2Heading mb={2}>About Me</H2Heading>
           <Text fontSize="1.12em" lineHeight={1.9} mb={6} color="neutralDark">
             Hi, I'm Masud — a front-end developer focused on building fast,
@@ -108,7 +106,7 @@ export default function AboutMe() {
             </Button>
             <Stack id="social-wrapper" gap={4}>
               <Span lineHeight={0} fontSize={".9em"} color={"#808080"}>
-                Follow Me
+                Connect with Me
               </Span>
               <Stack direction={"row"} gap={{ base: 5, md: 6 }}>
                 {SOCIAL_ICONS.map(({ href, label, title, icon }) => (

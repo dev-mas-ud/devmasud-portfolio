@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import H2Heading from "./H2Heading";
-import HeadingMarker from "./HeadingMarker";
 
 function AnimatedCounter({ target, duration = 2 }) {
   const controls = useAnimation();
@@ -86,7 +85,6 @@ export default function Achievements() {
         <Box flex="1" px={{ base: 2, md: 0 }}>
           <Stack>
             <Box>
-              <HeadingMarker text="my journey" />
               <H2Heading color="baseLight" mb={6}>
                 Achievements
               </H2Heading>

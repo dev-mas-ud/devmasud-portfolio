@@ -1,6 +1,5 @@
 import { Box, Flex, Text, Stack } from "@chakra-ui/react";
 import H2Heading from "./H2Heading";
-import HeadingMarker from "./HeadingMarker";
 import Timeline from "@/components/Timeline";
 
 const experience: any[] = [
@@ -72,7 +71,6 @@ export default function WorkExperience() {
         <Box w={{ base: "full", md: "70%", lg: "40%" }} px={{ base: 2, md: 0 }}>
           <Stack>
             <Box>
-              <HeadingMarker text="hands-on" />
               <H2Heading color="baseLight" mb={6}>
                 Work Experience
               </H2Heading>

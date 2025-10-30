@@ -14,7 +14,6 @@ import {
 import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
 import { ArrowUpRightSquareFill, Github } from "react-bootstrap-icons";
-import HeadingMarker from "./HeadingMarker";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -104,7 +103,6 @@ export default function Portfolio() {
     >
       <Stack align={"center"}>
         <Box>
-          <HeadingMarker text="recent work" />
           <H2Heading color="baseLight">My Recent Projects</H2Heading>
         </Box>
       </Stack>

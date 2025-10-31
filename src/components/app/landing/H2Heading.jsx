@@ -15,7 +15,6 @@ export default function H2Heading({
     <Heading
       ref={textRef}
       as="h2"
-      mt={-5}
       mb={props.mb || 12}
       fontSize={fontSize}
       textAlign={props.align || "left"}

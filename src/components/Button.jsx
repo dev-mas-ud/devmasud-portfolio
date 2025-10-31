@@ -28,7 +28,7 @@ export function Button({ children, ...props }) {
       fontWeight={"600"}
       fontSize={props.fontSize || ".97em"}
       _hover={{
-        backgroundColor: "secondary",
+        backgroundColor: "black/90",
         color: props.variant === "solid" ? "baseLight" : "",
         borderColor: "transparent",
       }}

@@ -1,4 +1,4 @@
-import { Input, Stack, Textarea } from "@chakra-ui/react";
+import { Flex, Input, Stack, Textarea } from "@chakra-ui/react";
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import { SlideIn } from "@/components/Animations";
@@ -87,7 +87,12 @@ export default function ContackForm() {
         ml={{ base: 0, md: 4 }}
         w={{ base: "100%", md: "60%", lg: "50%" }}
       >
-        <Stack as="form" gap={4} onSubmit={handleSubmit}>
+        <Flex
+          flexDirection={"column"}
+          as="form"
+          gap={4}
+          onSubmit={handleSubmit}
+        >
           <Input
             disabled={isLoading}
             name="name"
@@ -129,10 +134,12 @@ export default function ContackForm() {
             onChange={handleChange}
           />
           <Button
+            alignSelf="center"
             disabled={isLoading}
             type="submit"
             variant="solid"
             mt={2}
+            w="12rem"
             size="lg"
           >
             {isLoading ? (
@@ -145,7 +152,7 @@ export default function ContackForm() {
               </>
             )}
           </Button>
-        </Stack>
+        </Flex>
       </SlideIn>
       <Toaster />
     </>

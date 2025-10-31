@@ -97,7 +97,7 @@ export default function Portfolio() {
       id="projects"
       px={{ base: 6, md: 16 }}
       py={{ base: 16, md: 20 }}
-      pt={{ base: 10, md: 20 }}
+      pt={{ base: 6, md: 20 }}
       bg="neutralDark"
       style={{ scrollMarginTop: "50px" }}
     >

@@ -9,7 +9,7 @@ import {
 import Marquee from "react-fast-marquee";
 import H2Heading from "./H2Heading";
 
-const techs: any[] = [
+const STACK: any[] = [
   { name: "React", src: "/images/react.svg" },
   { name: "Next.js", src: "/images/next.svg" },
   { name: "JavaScript", src: "/images/javascript.svg" },
@@ -29,7 +29,7 @@ export default function TechStack() {
       id="Stack"
       bg="neutralDark"
       py={{ base: 16, md: 20 }}
-      pt={{ base: 10, md: 20 }}
+      pt={{ base: 12, md: 20 }}
       px={0}
     >
       <Container maxW="container.lg" p="0">
@@ -45,7 +45,7 @@ export default function TechStack() {
             gradientWidth={useBreakpointValue({ base: 70, md: 100 })}
           >
             <Flex as="div" align="center" gap={12} whiteSpace={"nowrap"}>
-              {[...techs].map((tech, index) => (
+              {[...STACK, ...STACK].map((tech, index) => (
                 <Box key={`stack-${index}`} minW="70px">
                   <Image
                     src={tech.src}

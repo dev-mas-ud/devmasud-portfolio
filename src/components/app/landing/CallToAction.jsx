@@ -8,8 +8,8 @@ export default function CTASection() {
       id="contact"
       bg="baseLight"
       py={{ base: 16, md: 20 }}
-      pt={{ base: 20, md: 20 }}
-      px={{ base: 6, md: 20 }}
+      pt={{ base: 16, md: 20 }}
+      px={{ base: 6, md: 20, lg: 40 }}
       style={{ scrollMarginTop: "50px" }}
     >
       <Box

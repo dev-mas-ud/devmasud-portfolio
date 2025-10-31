@@ -72,7 +72,7 @@ export default function Achievements() {
       as="section"
       bg="neutralDark"
       py={{ base: 16, md: 20 }}
-      pt={{ base: 10, md: 20 }}
+      pt={{ base: 4, md: 20 }}
       px={{ base: 5, md: 12 }}
     >
       <Flex
